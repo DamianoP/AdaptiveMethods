@@ -32,11 +32,11 @@ rankingFile		=path+"/ranking.txt"
 fileName		="results"		#raw_input("Name of dataset: ")
 newFile			=open(path+"/"+fileName+"_comparation.txt","w")
 accuracy		=0
-tuner 			=raw_input("Tuner (false / true): ")#"false"
-architecture	=raw_input("Architecture (midgard / byfrost): ")#"midgard"
-classifierName	=raw_input("Classifier name (for example: Decision tree): ")
-images			=raw_input("Image graph generation (digit 1 for yes, or 0 for not): ")#1 for generate the images, 0 for generate only the text file
-modelName=folder
+tuner 			=raw_input("Tuner (false / true): ") #"false"
+architecture		=raw_input("Architecture (midgard / byfrost): ") #"midgard"
+classifierName		=raw_input("Classifier name (for example: Decision tree): ") #Decision tree
+images			=int(raw_input("Image graph generation (digit 1 for yes, or 0 for not): ")) #1 for generate the images, 0 for generate only the text file
+modelName 		=folder
 myPrint("loading model...")
 clf = load(folder+"/"+modelName+".joblib")
 myPrint("model loaded !") 
@@ -143,9 +143,9 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 		convSTR="Conv"
 
 	if(numDirect!="null"):
-		directSTR="img2col + gemm"		+"\n"+str(numDirect)	+" exp"
+		directSTR="Directconv"		+"\n"+str(numDirect)	+" exp"
 	else:
-		directSTR="img2col + gemm"
+		directSTR="Directconv"
 
 	if(numWinog!="null"):
 		winogSTR="Winograd"	+"\n"+str(numWinog)	+" exp"
@@ -257,13 +257,13 @@ for i in range(1,len(shapes)):
 	shape=shapes[i].split(",")	
 	if(len(shape[0])==0 and len(shape[1])==0 and len(shape[2])==0 ): #"skipping case : ',,,,,,,,' "
 		continue
+	if(len(shape[0])>0 and currentNetwork=="_empty"):
+		currentNetwork=shape[0]
+		myPrint("Analyzing "+shape[0])
 	if(len(shape[0])>0 and i>1 and currentNetwork!=shape[0]):
-		if(currentNetwork=="_empty"):
-			currentNetwork=shape[0]
-		else:
-			middleReport()
-			currentNetwork=shape[0]
-			myPrint("Analyzing "+shape[0])
+		middleReport()
+		currentNetwork=shape[0]
+		myPrint("Analyzing "+shape[0])
 	nShapes 		   +=1
 	workingShape		=shape[3]+"-"+shape[1]+"-"+shape[2]+"-"+shape[4]+"-"+shape[5]+"-"+shape[6]+"-"+shape[7]
 	workingShapeARFF	=shape[3]+","+shape[1]+","+shape[2]+","+shape[4]+","+shape[5]+","+shape[6]+","+shape[7]+","+str(tuner)+","+str(precision)+","+str(architecture)
@@ -371,4 +371,3 @@ if (images==1):
 myPrint("\n")
 myPrint("Done!")
 newFile.close()
-
