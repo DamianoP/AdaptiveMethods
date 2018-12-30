@@ -23,5 +23,5 @@ In these example images you can see the bar chart.
 The height of the bars indicates the running time.
 <br/>
 Please note that at the bottom of each bar is the number of successful experiments on the dataset taken into consideration.
-<img align="left" width="450" height="450" src="PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true">
-<img align="right" width="450" height="450" src="PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true">
+<img width="600" height="600" src="PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true">
+<img width="600" height="600" src="PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true">
