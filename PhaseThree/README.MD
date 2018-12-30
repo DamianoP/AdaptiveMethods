@@ -15,6 +15,12 @@ Simply install the dependency
 python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose seaborn
 ```
 
+Create a folder for the results
+
+```
+mkdir results
+```
+
 Run the script with 
 
 ```
