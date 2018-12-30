@@ -7,9 +7,20 @@ It also generates a second file (ranking) where each row is a list.
 The first element is the tensor.
 <br/>
 The second element is an ordered list of pairs (algorithm name, execution time)
+<br/>
+Simply install the dependency 
 
-Simply run the script with 
+
+```
+python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose seaborn
+```
+
+Run the script with 
 
 ```
 python readExp.py
 ```
+
+<br/>
+
+Once finished you can go to the PhaseFour
