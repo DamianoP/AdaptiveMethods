@@ -7,10 +7,10 @@ The work has been enclosed in various folders with a name that describes the pha
 <br/>
 I recommend following the steps from the first to the last.
 <br/><br/>
-The PhaseOne explains how to create a dataset for experiments.
+PhaseOne explains how to create a dataset for experiments.
 <br/><br/>
-The PhaseTwo explains how to perform the experiments and collect the results.
+PhaseTwo explains how to perform the experiments and collect the results.
 <br/><br/>
-The PhaseThree explains how to read the results and get a .arff file
+PhaseThree explains how to read the results and get a .arff file
 <br/><br/>
 PhaseFour explains how to get a model to use with machine learning techniques
