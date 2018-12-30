@@ -7,3 +7,9 @@ It also generates a second file (ranking) where each row is a list.
 The first element is the tensor.
 <br/>
 The second element is an ordered list of pairs (algorithm name, execution time)
+
+Simply run the script with 
+
+'''
+python readExp.py
+'''
