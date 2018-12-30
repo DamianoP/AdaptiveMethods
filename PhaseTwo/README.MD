@@ -24,57 +24,74 @@ You must select your dataset and wait for the preparation of the files.
 Once the dataset here are the steps to take.
 <br/>
 Before starting the new tests, I recommend removing any old experiments:
+
 ```
 sudo ck rm local:experiment:* -f
 ```
+
 <br/>
 Run benchmarks with the following commands:
+
 ```
 sudo ck run nntest:conv-armcl-opencl --dataset_uoa=tensor-conv-test-myDataset --iterations=1
 sudo ck run nntest:directconv-armcl-opencl --dataset_uoa=tensor-conv-test-myDataset --iterations=1
 sudo ck run nntest:winogradconv-armcl-opencl --dataset_uoa=tensor-conv-test-myDataset --iterations=1
 ```
+
 <br/>
 
 After completing the benchmarks, collect the data in zip files:
+
 ```
 ck zip local:experiment:*-directconv-* --archive_name=myDatasetDirectconv.zip
 ck zip local:experiment:*-conv-* --archive_name=myDatasetConv.zip
 ck zip local:experiment:*-winogradconv-* --archive_name=myDatasetWinogradconv.zip
 ```
+
 <br/>
 Add zip files to the system repositories:
+
 ```
 ck add repo:myDatasetDirectconv --zip=myDatasetDirectconv.zip --quiet
 ck add repo:myDatasetConv --zip=myDatasetConv.zip --quiet
 ck add repo:myDatasetWinogradconv --zip=myDatasetWinogradconv.zip --quiet
 ```
+
 <br/>
 Remove the experiments from the local storage:
 <br/>
+
 ```
 sudo ck rm local:experiment:* -f
 ```
+
 <br/>
 Run the experiments with precision "uint8":
 <br/>
+
 ```
 sudo ck run nntest:conv-armcl-opencl-uint8 --dataset_uoa=tensor-conv-test-myDataset --iterations=1
 sudo ck run nntest:directconv-armcl-opencl-uint8 --dataset_uoa=tensor-conv-test-myDataset --iterations=1
 ```
+
 After completing the benchmarks, collect the data in zip files:
+
 ```
 ck zip local:experiment:*-directconv-* --archive_name=myDatasetDirectconvUINT8.zip
 ck zip local:experiment:*-conv-* --archive_name=myDatasetConvUINT8.zip
 ```
+
 Add zip files to the system repositories:
+
 ```
 ck add repo:myDatasetDirectconvUINT8 --zip=myDatasetDirectconvUINT8.zip --quiet
 ck add repo:myDatasetConvUINT8 --zip=myDatasetConvUINT8.zip --quiet
 ```
+
 <br/>
 Remove the experiments from the local storage:
 <br/>
+
 ```
 sudo ck rm local:experiment:* -f
 ```
