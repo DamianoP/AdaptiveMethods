@@ -10,6 +10,6 @@ The second element is an ordered list of pairs (algorithm name, execution time)
 
 Simply run the script with 
 
-'''
+```
 python readExp.py
-'''
+```
