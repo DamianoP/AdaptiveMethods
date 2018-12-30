@@ -26,7 +26,7 @@ The height of the bars indicates the running time.
 <br/>
 Please note that at the bottom of each bar is the number of successful experiments on the dataset taken into consideration.
 <br/>
-The predicted column indicates in brackets the number of experiments used for each technique: for example (3.7.9) it would indicate 3 experiments obtained with Conv, 7 with Image to column + GEMM, 9 with Winograd.
+The predicted column indicates in brackets the number of experiments used for each technique: for example (3,7,9) it would indicate 3 experiments obtained with Conv, 7 with Directconv, 9 with Winograd.
 <br/>
 <img width="600" height="600" src="PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true">
 <img width="600" height="600" src="PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true">
