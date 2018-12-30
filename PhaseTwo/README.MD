@@ -19,7 +19,7 @@ Then prepare the shapes for the convolution with:
 ck run program:tool-prepare-dataset
 ```
 
-You must select your dataset and waith for the preparation of the files.
+You must select your dataset and wait for the preparation of the files.
 <br/>
 
 
