@@ -5,8 +5,7 @@ please visit this link
 https://github.com/ctuning/ck-nntest 
 <br/>
 and follow the steps
-
-<br/><br/>
+<br/>
 Get the data.csv file (created in the PhaseOne) and import the file as a new dataset:<br/>
 
 ```
