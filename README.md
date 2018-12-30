@@ -14,3 +14,5 @@ PhaseTwo explains how to perform the experiments and collect the results.
 PhaseThree explains how to read the results and get a .arff file
 <br/><br/>
 PhaseFour explains how to get a model to use with machine learning techniques
+<br/><br/>
+PhaseFour explains how to get the results of the analysis and contains some experiments carried out by me
