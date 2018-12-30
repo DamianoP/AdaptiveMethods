@@ -1,0 +1,2827 @@
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+loading model...
+model loaded !
+Analyzing: 64-73-73-1-80-1-0
+manual conv time: 41125.0
+manual directconv time: 71040.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:41125.0
+manual Directconv time:71040.0
+manual Winogradconv time:0
+best possible time:41125.0
+predicted time for the network:41125.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing InceptionV3
+Analyzing: 192-35-35-1-64-1-0
+manual conv time: 14334.0
+manual directconv time: 38248.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-35-35-1-48-1-0
+manual conv time: 13697.0
+manual directconv time: 32730.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-35-35-1-64-1-0
+manual conv time: 14334.0
+manual directconv time: 38248.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-35-35-1-32-1-0
+manual conv time: 9694.0
+manual directconv time: 21107.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-35-35-1-64-1-0
+manual conv time: 18469.0
+manual directconv time: 50841.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-35-35-1-48-1-0
+manual conv time: 16535.0
+manual directconv time: 41404.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-35-35-1-64-1-0
+manual conv time: 18469.0
+manual directconv time: 50841.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-35-35-1-64-1-0
+manual conv time: 18469.0
+manual directconv time: 50841.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 288-35-35-1-64-1-0
+manual conv time: 20232.0
+manual directconv time: 57233.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 288-35-35-1-48-1-0
+manual conv time: 18678.0
+manual directconv time: 47657.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 288-35-35-1-64-1-0
+manual conv time: 20232.0
+manual directconv time: 57233.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 288-35-35-1-64-1-0
+manual conv time: 20232.0
+manual directconv time: 57233.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 288-35-35-1-64-1-0
+manual conv time: 20232.0
+manual directconv time: 57233.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-128-1-0
+manual conv time: 23563.0
+manual directconv time: 87399.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-128-1-0
+manual conv time: 23563.0
+manual directconv time: 87399.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-160-1-0
+manual conv time: 27897.0
+manual directconv time: 114210.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-160-1-0
+manual conv time: 27897.0
+manual directconv time: 114210.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-160-1-0
+manual conv time: 27897.0
+manual directconv time: 114210.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-160-1-0
+manual conv time: 27897.0
+manual directconv time: 114210.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-192-1-0
+manual conv time: 32248.0
+manual directconv time: 121383.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1280-8-8-1-320-1-0
+manual conv time: 17464.0
+manual directconv time: 56374.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1280-8-8-1-384-1-0
+manual conv time: 20406.0
+manual directconv time: 66586.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1280-8-8-1-448-1-0
+manual conv time: 24038.0
+manual directconv time: 78336.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1280-8-8-1-192-1-0
+manual conv time: 11699.0
+manual directconv time: 34659.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 2048-8-8-1-320-1-0
+manual conv time: 26547.0
+manual directconv time: 88765.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 2048-8-8-1-384-1-0
+manual conv time: 31462.0
+manual directconv time: 90298.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 2048-8-8-1-448-1-0
+manual conv time: 36227.0
+manual directconv time: 125065.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 2048-8-8-1-192-1-0
+manual conv time: 16990.0
+manual directconv time: 53582.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 2048-1-1-1-1001-1-0
+manual conv time: 7145.0
+manual directconv time: 66103.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 48-35-35-5-64-1-2
+manual conv time: 69730.0
+manual directconv time: null
+manual winogradconvTime time: 16986.0
+predicted best: winogradconv
+
+
+Analyzing: 48-35-35-5-64-1-2
+manual conv time: 69730.0
+manual directconv time: null
+manual winogradconvTime time: 16986.0
+predicted best: winogradconv
+
+
+Analyzing: 48-35-35-5-64-1-2
+manual conv time: 69730.0
+manual directconv time: null
+manual winogradconvTime time: 16986.0
+predicted best: winogradconv
+
+
+Analyzing: 3-299-299-3-32-2-0
+manual conv time: 26918.0
+manual directconv time: 36314.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-149-149-3-32-1-0
+manual conv time: 157407.0
+manual directconv time: 143373.0
+manual winogradconvTime time: 51925.0
+predicted best: winogradconv
+
+
+Analyzing: 32-147-147-3-64-1-1
+manual conv time: 206471.0
+manual directconv time: null
+manual winogradconvTime time: 81933.0
+predicted best: winogradconv
+
+
+Analyzing: 80-73-73-3-192-1-0
+manual conv time: 266103.0
+manual directconv time: null
+manual winogradconvTime time: 99128.0
+predicted best: winogradconv
+
+
+Analyzing: 64-35-35-3-96-1-1
+manual conv time: 48585.0
+manual directconv time: null
+manual winogradconvTime time: 17569.0
+predicted best: winogradconv
+
+
+Analyzing: 96-35-35-3-96-1-1
+manual conv time: 71328.0
+manual directconv time: null
+manual winogradconvTime time: 23904.0
+predicted best: winogradconv
+
+
+Analyzing: 64-35-35-3-96-1-1
+manual conv time: 48585.0
+manual directconv time: null
+manual winogradconvTime time: 17569.0
+predicted best: winogradconv
+
+
+Analyzing: 96-35-35-3-96-1-1
+manual conv time: 71328.0
+manual directconv time: null
+manual winogradconvTime time: 23904.0
+predicted best: winogradconv
+
+
+Analyzing: 64-35-35-3-96-1-1
+manual conv time: 48585.0
+manual directconv time: null
+manual winogradconvTime time: 17569.0
+predicted best: winogradconv
+
+
+Analyzing: 96-35-35-3-96-1-1
+manual conv time: 71328.0
+manual directconv time: null
+manual winogradconvTime time: 23904.0
+predicted best: winogradconv
+
+
+Analyzing: 288-35-35-3-384-2-0
+manual conv time: 95715.0
+manual directconv time: 445000.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-35-35-3-96-1-1
+manual conv time: 48585.0
+manual directconv time: null
+manual winogradconvTime time: 17569.0
+predicted best: winogradconv
+
+
+Analyzing: 96-35-35-3-96-2-0
+manual conv time: 19422.0
+manual directconv time: 58488.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-17-17-3-320-2-0
+manual conv time: 22621.0
+manual directconv time: 54366.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-17-17-3-192-2-0
+manual conv time: 14482.0
+manual directconv time: 32562.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 448-8-8-3-384-1-1
+manual conv time: 60055.0
+manual directconv time: 97508.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 448-8-8-3-384-1-1
+manual conv time: 60055.0
+manual directconv time: 97508.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:2508038.0
+manual Directconv time:4313970.0
+manual Winogradconv time:425932.0
+best possible time:1686475.0
+predicted time for the network:1686475.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing Inception-v3
+Analyzing: 3-299-299-3-32-2-0
+manual conv time: 26918.0
+manual directconv time: 36314.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-149-149-3-32-1-0
+manual conv time: 157407.0
+manual directconv time: 143373.0
+manual winogradconvTime time: 51925.0
+predicted best: winogradconv
+
+
+Analyzing: 32-147-147-3-64-1-1
+manual conv time: 206471.0
+manual directconv time: null
+manual winogradconvTime time: 81933.0
+predicted best: winogradconv
+
+
+Analyzing: 64-73-73-1-80-1-0
+manual conv time: 41125.0
+manual directconv time: 71040.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-17-17-1-128-1-0
+manual conv time: 23563.0
+manual directconv time: 87399.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:455484.0
+manual Directconv time:338126.0
+manual Winogradconv time:133858.0
+best possible time:225464.0
+predicted time for the network:225464.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_1.0_224
+Analyzing: 1024-1-1-1-1001-1-0
+manual conv time: 3865.0
+manual directconv time: 24236.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-112-112-1-64-1-0
+manual conv time: 44879.0
+manual directconv time: 73667.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-512-1-0
+manual conv time: 24522.0
+manual directconv time: 65092.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-28-28-1-256-1-0
+manual conv time: 28444.0
+manual directconv time: 61269.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-28-28-1-256-1-0
+manual conv time: 46829.0
+manual directconv time: 118097.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-56-56-1-128-1-0
+manual conv time: 60883.0
+manual directconv time: 135783.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-56-56-1-128-1-0
+manual conv time: 37508.0
+manual directconv time: 64826.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 1024-7-7-1-1024-1-0
+manual conv time: 34315.0
+manual directconv time: 104759.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-7-7-1-1024-1-0
+manual conv time: 18323.0
+manual directconv time: 62271.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:510658.0
+manual Directconv time:1310810.0
+manual Winogradconv time:0
+best possible time:510658.0
+predicted time for the network:645701.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_1.0_192
+Analyzing: 1024-1-1-1-1001-1-0
+manual conv time: 3865.0
+manual directconv time: 24236.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-12-12-1-512-1-0
+manual conv time: 16183.0
+manual directconv time: 15456.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-12-12-1-512-1-0
+manual conv time: 27583.0
+manual directconv time: 110998.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-12-12-1-512-1-0
+manual conv time: 27583.0
+manual directconv time: 110998.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-12-12-1-512-1-0
+manual conv time: 27583.0
+manual directconv time: 110998.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-12-12-1-512-1-0
+manual conv time: 27583.0
+manual directconv time: 110998.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-12-12-1-512-1-0
+manual conv time: 27583.0
+manual directconv time: 110998.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-24-24-1-256-1-0
+manual conv time: 20983.0
+manual directconv time: 44484.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-24-24-1-256-1-0
+manual conv time: 35563.0
+manual directconv time: 36405.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-48-48-1-128-1-0
+manual conv time: 43965.0
+manual directconv time: 31747.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-48-48-1-128-1-0
+manual conv time: 25452.0
+manual directconv time: 15416.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 1024-6-6-1-1024-1-0
+manual conv time: 25317.0
+manual directconv time: 31186.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-6-6-1-1024-1-0
+manual conv time: 13721.0
+manual directconv time: 15418.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-96-96-1-64-1-0
+manual conv time: 33634.0
+manual directconv time: 22574.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 3-192-192-3-32-2-0
+manual conv time: 11335.0
+manual directconv time: 5562.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:367933.0
+manual Directconv time:797474.0
+manual Winogradconv time:0
+best possible time:328119.0
+predicted time for the network:328119.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_1.0_160
+Analyzing: 3-160-160-3-32-2-0
+manual conv time: 8086.0
+manual directconv time: 4704.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 1024-1-1-1-1001-1-0
+manual conv time: 3865.0
+manual directconv time: 24236.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-512-1-0
+manual conv time: 11176.0
+manual directconv time: 12836.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 19113.0
+manual directconv time: 25330.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 19113.0
+manual directconv time: 25330.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 19113.0
+manual directconv time: 25330.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 19113.0
+manual directconv time: 25330.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 19113.0
+manual directconv time: 25330.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-20-20-1-256-1-0
+manual conv time: 15146.0
+manual directconv time: 10115.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-20-20-1-256-1-0
+manual conv time: 24963.0
+manual directconv time: 20882.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-40-40-1-128-1-0
+manual conv time: 28589.0
+manual directconv time: 20306.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-40-40-1-128-1-0
+manual conv time: 17430.0
+manual directconv time: 9676.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 1024-5-5-1-1024-1-0
+manual conv time: 41669.0
+manual directconv time: 38979.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-5-5-1-1024-1-0
+manual conv time: 14990.0
+manual directconv time: 19376.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-80-80-1-64-1-0
+manual conv time: 23049.0
+manual directconv time: 19388.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:284528.0
+manual Directconv time:307148.0
+manual Winogradconv time:0
+best possible time:249646.0
+predicted time for the network:249646.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_1.0_128
+Analyzing: 3-128-128-3-32-2-0
+manual conv time: 5943.0
+manual directconv time: 7949.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1024-1-1-1-1001-1-0
+manual conv time: 3865.0
+manual directconv time: 24236.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-16-16-1-256-1-0
+manual conv time: 9716.0
+manual directconv time: 19084.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-16-16-1-256-1-0
+manual conv time: 16252.0
+manual directconv time: 36839.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-32-32-1-128-1-0
+manual conv time: 19504.0
+manual directconv time: 41602.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-32-32-1-128-1-0
+manual conv time: 11616.0
+manual directconv time: 21035.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1024-4-4-1-1024-1-0
+manual conv time: 22035.0
+manual directconv time: 70748.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-4-4-1-1024-1-0
+manual conv time: 8224.0
+manual directconv time: 35849.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-64-64-1-64-1-0
+manual conv time: 15535.0
+manual directconv time: 23320.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-8-8-1-512-1-0
+manual conv time: 7297.0
+manual directconv time: 18664.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-8-8-1-512-1-0
+manual conv time: 12146.0
+manual directconv time: 35744.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-8-8-1-512-1-0
+manual conv time: 12146.0
+manual directconv time: 35744.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-8-8-1-512-1-0
+manual conv time: 12146.0
+manual directconv time: 35744.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-8-8-1-512-1-0
+manual conv time: 12146.0
+manual directconv time: 35744.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-8-8-1-512-1-0
+manual conv time: 12146.0
+manual directconv time: 35744.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:180717.0
+manual Directconv time:478046.0
+manual Winogradconv time:0
+best possible time:180717.0
+predicted time for the network:180717.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.75_224
+Analyzing: 768-1-1-1-1001-1-0
+manual conv time: 3248.0
+manual directconv time: 19427.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 24-112-112-1-48-1-0
+manual conv time: 30865.0
+manual directconv time: 42982.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-14-14-1-384-1-0
+manual conv time: 15968.0
+manual directconv time: 37035.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-14-14-1-384-1-0
+manual conv time: 26877.0
+manual directconv time: 74787.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-14-14-1-384-1-0
+manual conv time: 26877.0
+manual directconv time: 74787.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-14-14-1-384-1-0
+manual conv time: 26877.0
+manual directconv time: 74787.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-14-14-1-384-1-0
+manual conv time: 26877.0
+manual directconv time: 74787.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-14-14-1-384-1-0
+manual conv time: 26877.0
+manual directconv time: 74787.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-28-28-1-192-1-0
+manual conv time: 29430.0
+manual directconv time: 76013.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-28-28-1-192-1-0
+manual conv time: 17916.0
+manual directconv time: 40495.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 48-56-56-1-96-1-0
+manual conv time: 21343.0
+manual directconv time: 36691.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-56-56-1-96-1-0
+manual conv time: 36939.0
+manual directconv time: 73924.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-7-7-1-768-1-0
+manual conv time: 12154.0
+manual directconv time: 37916.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-7-7-1-768-1-0
+manual conv time: 21799.0
+manual directconv time: 74131.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 3-224-224-3-24-2-0
+manual conv time: 12977.0
+manual directconv time: 15625.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:337024.0
+manual Directconv time:828174.0
+manual Winogradconv time:0
+best possible time:337024.0
+predicted time for the network:337024.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.75_192
+Analyzing: 3-192-192-3-24-2-0
+manual conv time: 9661.0
+manual directconv time: 12155.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-1-1-1-1001-1-0
+manual conv time: 3248.0
+manual directconv time: 19427.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-12-12-1-384-1-0
+manual conv time: 10628.0
+manual directconv time: 31539.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-12-12-1-384-1-0
+manual conv time: 17845.0
+manual directconv time: 63601.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-12-12-1-384-1-0
+manual conv time: 17845.0
+manual directconv time: 63601.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-12-12-1-384-1-0
+manual conv time: 17845.0
+manual directconv time: 63601.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-12-12-1-384-1-0
+manual conv time: 17845.0
+manual directconv time: 63601.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-12-12-1-384-1-0
+manual conv time: 17845.0
+manual directconv time: 63601.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-24-24-1-192-1-0
+manual conv time: 21669.0
+manual directconv time: 50997.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-24-24-1-192-1-0
+manual conv time: 13360.0
+manual directconv time: 25473.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 48-48-48-1-96-1-0
+manual conv time: 15831.0
+manual directconv time: 27555.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-48-48-1-96-1-0
+manual conv time: 26722.0
+manual directconv time: 54501.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-6-6-1-768-1-0
+manual conv time: 8685.0
+manual directconv time: 30677.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-6-6-1-768-1-0
+manual conv time: 16690.0
+manual directconv time: 60237.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 24-96-96-1-48-1-0
+manual conv time: 22925.0
+manual directconv time: 31473.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:238644.0
+manual Directconv time:662039.0
+manual Winogradconv time:0
+best possible time:238644.0
+predicted time for the network:238644.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.75_160
+Analyzing: 768-1-1-1-1001-1-0
+manual conv time: 3248.0
+manual directconv time: 19427.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 3-160-160-3-24-2-0
+manual conv time: 6705.0
+manual directconv time: 8367.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-10-10-1-384-1-0
+manual conv time: 7326.0
+manual directconv time: 25342.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-20-20-1-192-1-0
+manual conv time: 15611.0
+manual directconv time: 42731.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-20-20-1-192-1-0
+manual conv time: 9960.0
+manual directconv time: 21240.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 48-40-40-1-96-1-0
+manual conv time: 11117.0
+manual directconv time: 18642.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-40-40-1-96-1-0
+manual conv time: 18471.0
+manual directconv time: 36567.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-5-5-1-768-1-0
+manual conv time: 8699.0
+manual directconv time: 27224.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-5-5-1-768-1-0
+manual conv time: 23397.0
+manual directconv time: 54025.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 24-80-80-1-48-1-0
+manual conv time: 16112.0
+manual directconv time: 20911.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 3-160-160-3-24-2-0
+manual conv time: 6705.0
+manual directconv time: 8367.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 24-80-80-1-48-1-0
+manual conv time: 16112.0
+manual directconv time: 20911.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 48-40-40-1-96-1-0
+manual conv time: 11117.0
+manual directconv time: 18642.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-40-40-1-96-1-0
+manual conv time: 18471.0
+manual directconv time: 36567.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-20-20-1-192-1-0
+manual conv time: 9960.0
+manual directconv time: 21240.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-20-20-1-192-1-0
+manual conv time: 15611.0
+manual directconv time: 42731.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-10-10-1-384-1-0
+manual conv time: 7326.0
+manual directconv time: 25342.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-10-10-1-384-1-0
+manual conv time: 11941.0
+manual directconv time: 50283.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-5-5-1-768-1-0
+manual conv time: 8699.0
+manual directconv time: 27224.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-5-5-1-768-1-0
+manual conv time: 23397.0
+manual directconv time: 54025.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-1-1-1-1001-1-0
+manual conv time: 3248.0
+manual directconv time: 19427.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:360702.0
+manual Directconv time:1051782.0
+manual Winogradconv time:0
+best possible time:360702.0
+predicted time for the network:360702.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.75_128
+Analyzing: 3-128-128-3-24-2-0
+manual conv time: 4672.0
+manual directconv time: 6047.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-1-1-1-1001-1-0
+manual conv time: 3248.0
+manual directconv time: 19427.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-16-16-1-192-1-0
+manual conv time: 10731.0
+manual directconv time: 20972.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-16-16-1-192-1-0
+manual conv time: 6673.0
+manual directconv time: 11257.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 48-32-32-1-96-1-0
+manual conv time: 7665.0
+manual directconv time: 12330.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-32-32-1-96-1-0
+manual conv time: 12056.0
+manual directconv time: 24005.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-4-4-1-768-1-0
+manual conv time: 5123.0
+manual directconv time: 20539.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 768-4-4-1-768-1-0
+manual conv time: 13385.0
+manual directconv time: 41292.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 24-64-64-1-48-1-0
+manual conv time: 10463.0
+manual directconv time: 13435.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-8-8-1-384-1-0
+manual conv time: 4808.0
+manual directconv time: 10804.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-8-8-1-384-1-0
+manual conv time: 7642.0
+manual directconv time: 20162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-8-8-1-384-1-0
+manual conv time: 7642.0
+manual directconv time: 20162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-8-8-1-384-1-0
+manual conv time: 7642.0
+manual directconv time: 20162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-8-8-1-384-1-0
+manual conv time: 7642.0
+manual directconv time: 20162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-8-8-1-384-1-0
+manual conv time: 7642.0
+manual directconv time: 20162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:117034.0
+manual Directconv time:280918.0
+manual Winogradconv time:0
+best possible time:117034.0
+predicted time for the network:117034.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.50_224
+Analyzing: 3-224-224-3-16-2-0
+manual conv time: 10436.0
+manual directconv time: 10975.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-1-1-1-1001-1-0
+manual conv time: 2213.0
+manual directconv time: 13676.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-112-112-1-32-1-0
+manual conv time: 19405.0
+manual directconv time: 19550.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-14-14-1-256-1-0
+manual conv time: 7759.0
+manual directconv time: 17360.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-256-1-0
+manual conv time: 13059.0
+manual directconv time: 34030.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-256-1-0
+manual conv time: 13059.0
+manual directconv time: 34030.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-256-1-0
+manual conv time: 13059.0
+manual directconv time: 34030.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-256-1-0
+manual conv time: 13059.0
+manual directconv time: 34030.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-256-1-0
+manual conv time: 13059.0
+manual directconv time: 34030.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-28-28-1-128-1-0
+manual conv time: 14944.0
+manual directconv time: 37163.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-28-28-1-128-1-0
+manual conv time: 8730.0
+manual directconv time: 18674.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-56-56-1-64-1-0
+manual conv time: 11451.0
+manual directconv time: 16879.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-56-56-1-64-1-0
+manual conv time: 20564.0
+manual directconv time: 34396.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-7-7-1-512-1-0
+manual conv time: 6200.0
+manual directconv time: 16860.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-7-7-1-512-1-0
+manual conv time: 10256.0
+manual directconv time: 31922.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:177253.0
+manual Directconv time:387605.0
+manual Winogradconv time:0
+best possible time:177253.0
+predicted time for the network:177253.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_1.0_224
+Analyzing: 3-224-224-3-32-2-0
+manual conv time: 15645.0
+manual directconv time: 5760.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 3-224-224-3-32-2-0
+manual conv time: 15645.0
+manual directconv time: 5760.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-112-112-1-64-1-0
+manual conv time: 44879.0
+manual directconv time: 73667.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-56-56-1-128-1-0
+manual conv time: 37508.0
+manual directconv time: 64826.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-56-56-1-128-1-0
+manual conv time: 60883.0
+manual directconv time: 135783.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-28-28-1-256-1-0
+manual conv time: 28444.0
+manual directconv time: 61269.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-28-28-1-256-1-0
+manual conv time: 46829.0
+manual directconv time: 118097.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-14-14-1-512-1-0
+manual conv time: 24522.0
+manual directconv time: 65092.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-1-512-1-0
+manual conv time: 42218.0
+manual directconv time: 120162.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-7-7-1-1024-1-0
+manual conv time: 18323.0
+manual directconv time: 62271.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1024-7-7-1-1024-1-0
+manual conv time: 34315.0
+manual directconv time: 104759.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1024-1-1-1-1001-1-0
+manual conv time: 3865.0
+manual directconv time: 24236.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:541948.0
+manual Directconv time:1322330.0
+manual Winogradconv time:0
+best possible time:522178.0
+predicted time for the network:676991.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.50_192
+Analyzing: 3-192-192-3-16-2-0
+manual conv time: 7695.0
+manual directconv time: 9394.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-1-1-1-1001-1-0
+manual conv time: 2213.0
+manual directconv time: 13676.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-12-12-1-256-1-0
+manual conv time: 5618.0
+manual directconv time: 15256.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-12-12-1-256-1-0
+manual conv time: 8651.0
+manual directconv time: 28960.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-12-12-1-256-1-0
+manual conv time: 8651.0
+manual directconv time: 28960.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-12-12-1-256-1-0
+manual conv time: 8651.0
+manual directconv time: 28960.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-12-12-1-256-1-0
+manual conv time: 8651.0
+manual directconv time: 28960.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-12-12-1-256-1-0
+manual conv time: 8651.0
+manual directconv time: 28960.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-24-24-1-128-1-0
+manual conv time: 11225.0
+manual directconv time: 23130.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-24-24-1-128-1-0
+manual conv time: 6905.0
+manual directconv time: 12105.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-48-48-1-64-1-0
+manual conv time: 8731.0
+manual directconv time: 13342.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-48-48-1-64-1-0
+manual conv time: 15189.0
+manual directconv time: 25284.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-6-6-1-512-1-0
+manual conv time: 4854.0
+manual directconv time: 14622.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-6-6-1-512-1-0
+manual conv time: 7782.0
+manual directconv time: 28178.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-96-96-1-32-1-0
+manual conv time: 14358.0
+manual directconv time: 14615.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:127825.0
+manual Directconv time:314402.0
+manual Winogradconv time:0
+best possible time:127825.0
+predicted time for the network:127825.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.50_160
+Analyzing: 3-160-160-3-16-2-0
+manual conv time: 5216.0
+manual directconv time: 6460.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-1-1-1-1001-1-0
+manual conv time: 2213.0
+manual directconv time: 13676.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-10-10-1-256-1-0
+manual conv time: 3971.0
+manual directconv time: 12108.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-256-1-0
+manual conv time: 6026.0
+manual directconv time: 22741.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-256-1-0
+manual conv time: 6026.0
+manual directconv time: 22741.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-256-1-0
+manual conv time: 6026.0
+manual directconv time: 22741.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-256-1-0
+manual conv time: 6026.0
+manual directconv time: 22741.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-256-1-0
+manual conv time: 6026.0
+manual directconv time: 22741.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-20-20-1-128-1-0
+manual conv time: 8297.0
+manual directconv time: 19521.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-20-20-1-128-1-0
+manual conv time: 5077.0
+manual directconv time: 10171.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-40-40-1-64-1-0
+manual conv time: 6317.0
+manual directconv time: 9163.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-40-40-1-64-1-0
+manual conv time: 10153.0
+manual directconv time: 16710.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-5-5-1-512-1-0
+manual conv time: 3714.0
+manual directconv time: 12267.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-5-5-1-512-1-0
+manual conv time: 7903.0
+manual directconv time: 23507.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-80-80-1-32-1-0
+manual conv time: 10223.0
+manual directconv time: 10345.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:93214.0
+manual Directconv time:247633.0
+manual Winogradconv time:0
+best possible time:93214.0
+predicted time for the network:93214.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.50_128
+Analyzing: 3-128-128-3-16-2-0
+manual conv time: 3904.0
+manual directconv time: 4514.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-1-1-1-1001-1-0
+manual conv time: 2213.0
+manual directconv time: 13676.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-16-16-1-128-1-0
+manual conv time: 5520.0
+manual directconv time: 9989.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-16-16-1-128-1-0
+manual conv time: 3326.0
+manual directconv time: 5716.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-32-32-1-64-1-0
+manual conv time: 4159.0
+manual directconv time: 6284.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-32-32-1-64-1-0
+manual conv time: 6818.0
+manual directconv time: 11471.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-4-4-1-512-1-0
+manual conv time: 2292.0
+manual directconv time: 9721.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-4-4-1-512-1-0
+manual conv time: 3552.0
+manual directconv time: 19130.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-64-64-1-32-1-0
+manual conv time: 6735.0
+manual directconv time: 7104.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-8-8-1-256-1-0
+manual conv time: 2549.0
+manual directconv time: 5187.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-8-8-1-256-1-0
+manual conv time: 3825.0
+manual directconv time: 9756.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-8-8-1-256-1-0
+manual conv time: 3825.0
+manual directconv time: 9756.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-8-8-1-256-1-0
+manual conv time: 3825.0
+manual directconv time: 9756.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-8-8-1-256-1-0
+manual conv time: 3825.0
+manual directconv time: 9756.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-8-8-1-256-1-0
+manual conv time: 3825.0
+manual directconv time: 9756.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:60193.0
+manual Directconv time:141572.0
+manual Winogradconv time:0
+best possible time:60193.0
+predicted time for the network:60193.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.25_224
+Analyzing: 3-224-224-3-8-2-0
+manual conv time: 7872.0
+manual directconv time: 6498.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-1-1-1-1001-1-0
+manual conv time: 1603.0
+manual directconv time: 7177.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 8-112-112-1-16-1-0
+manual conv time: 9056.0
+manual directconv time: 5566.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-14-14-1-128-1-0
+manual conv time: 4305.0
+manual directconv time: 9724.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-14-14-1-128-1-0
+manual conv time: 4305.0
+manual directconv time: 9724.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-14-14-1-128-1-0
+manual conv time: 4305.0
+manual directconv time: 9724.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-14-14-1-128-1-0
+manual conv time: 4305.0
+manual directconv time: 9724.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-14-14-1-128-1-0
+manual conv time: 4305.0
+manual directconv time: 9724.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-14-14-1-128-1-0
+manual conv time: 2859.0
+manual directconv time: 5121.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-28-28-1-64-1-0
+manual conv time: 3495.0
+manual directconv time: 6038.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-28-28-1-64-1-0
+manual conv time: 6060.0
+manual directconv time: 10499.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-56-56-1-32-1-0
+manual conv time: 5517.0
+manual directconv time: 3278.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 32-56-56-1-32-1-0
+manual conv time: 8926.0
+manual directconv time: 3389.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-7-7-1-256-1-0
+manual conv time: 2583.0
+manual directconv time: 1829.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-7-7-1-256-1-0
+manual conv time: 3637.0
+manual directconv time: 3413.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:73133.0
+manual Directconv time:101428.0
+manual Winogradconv time:0
+best possible time:59515.0
+predicted time for the network:59515.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.25_192
+Analyzing: 3-192-192-3-8-2-0
+manual conv time: 5839.0
+manual directconv time: 5635.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-1-1-1-1001-1-0
+manual conv time: 1603.0
+manual directconv time: 7177.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-12-12-1-128-1-0
+manual conv time: 3219.0
+manual directconv time: 2714.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-12-12-1-128-1-0
+manual conv time: 3219.0
+manual directconv time: 2714.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-12-12-1-128-1-0
+manual conv time: 3219.0
+manual directconv time: 2714.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-12-12-1-128-1-0
+manual conv time: 3219.0
+manual directconv time: 2714.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-12-12-1-128-1-0
+manual conv time: 3219.0
+manual directconv time: 2714.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-12-12-1-128-1-0
+manual conv time: 2072.0
+manual directconv time: 1685.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 32-24-24-1-64-1-0
+manual conv time: 2822.0
+manual directconv time: 1487.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-24-24-1-64-1-0
+manual conv time: 4397.0
+manual directconv time: 2506.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 16-48-48-1-32-1-0
+manual conv time: 4304.0
+manual directconv time: 1572.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 32-48-48-1-32-1-0
+manual conv time: 6524.0
+manual directconv time: 2634.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-6-6-1-256-1-0
+manual conv time: 2174.0
+manual directconv time: 2123.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-6-6-1-256-1-0
+manual conv time: 3188.0
+manual directconv time: 3433.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 8-96-96-1-16-1-0
+manual conv time: 6280.0
+manual directconv time: 2223.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:55298.0
+manual Directconv time:44045.0
+manual Winogradconv time:0
+best possible time:38226.0
+predicted time for the network:38226.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.25_160
+Analyzing: 3-160-160-3-8-2-0
+manual conv time: 4261.0
+manual directconv time: 4408.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-1-1-1-1001-1-0
+manual conv time: 1603.0
+manual directconv time: 7177.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-10-10-1-128-1-0
+manual conv time: 2631.0
+manual directconv time: 2991.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-10-10-1-128-1-0
+manual conv time: 2631.0
+manual directconv time: 2991.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-10-10-1-128-1-0
+manual conv time: 2631.0
+manual directconv time: 2991.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-10-10-1-128-1-0
+manual conv time: 2631.0
+manual directconv time: 2991.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-10-10-1-128-1-0
+manual conv time: 2631.0
+manual directconv time: 2991.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-10-10-1-128-1-0
+manual conv time: 1644.0
+manual directconv time: 1490.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 32-20-20-1-64-1-0
+manual conv time: 2525.0
+manual directconv time: 3547.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-20-20-1-64-1-0
+manual conv time: 3355.0
+manual directconv time: 5928.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-40-40-1-32-1-0
+manual conv time: 2991.0
+manual directconv time: 3098.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-40-40-1-32-1-0
+manual conv time: 4889.0
+manual directconv time: 5294.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-5-5-1-256-1-0
+manual conv time: 1595.0
+manual directconv time: 4240.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-5-5-1-256-1-0
+manual conv time: 2111.0
+manual directconv time: 8144.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 8-80-80-1-16-1-0
+manual conv time: 4518.0
+manual directconv time: 3918.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:42647.0
+manual Directconv time:62199.0
+manual Winogradconv time:0
+best possible time:41893.0
+predicted time for the network:41893.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing MobileNet_0.25_128
+Analyzing: 256-1-1-1-1001-1-0
+manual conv time: 1603.0
+manual directconv time: 7177.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-16-16-1-64-1-0
+manual conv time: 1627.0
+manual directconv time: 2035.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-16-16-1-64-1-0
+manual conv time: 2168.0
+manual directconv time: 3125.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-32-32-1-32-1-0
+manual conv time: 2480.0
+manual directconv time: 1222.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 32-32-32-1-32-1-0
+manual conv time: 3322.0
+manual directconv time: 1993.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-4-4-1-256-1-0
+manual conv time: 1123.0
+manual directconv time: 1710.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-4-4-1-256-1-0
+manual conv time: 1370.0
+manual directconv time: 2197.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 8-64-64-1-16-1-0
+manual conv time: 3508.0
+manual directconv time: 2368.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-8-8-1-128-1-0
+manual conv time: 1545.0
+manual directconv time: 1629.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-8-8-1-128-1-0
+manual conv time: 1545.0
+manual directconv time: 1629.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-8-8-1-128-1-0
+manual conv time: 1545.0
+manual directconv time: 1629.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-8-8-1-128-1-0
+manual conv time: 1545.0
+manual directconv time: 1629.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 128-8-8-1-128-1-0
+manual conv time: 1545.0
+manual directconv time: 1629.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-8-8-1-128-1-0
+manual conv time: 1266.0
+manual directconv time: 1008.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 3-128-128-3-8-2-0
+manual conv time: 2944.0
+manual directconv time: 3097.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:29136.0
+manual Directconv time:34077.0
+manual Winogradconv time:0
+best possible time:25151.0
+predicted time for the network:25151.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing ResNet-50
+Analyzing: 3-224-224-7-64-2-3
+manual conv time: 115072.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-56-56-1-64-1-0
+manual conv time: 20564.0
+manual directconv time: 34396.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-56-56-1-64-1-0
+manual conv time: 69043.0
+manual directconv time: 146629.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1024-14-14-1-256-1-0
+manual conv time: 46055.0
+manual directconv time: 134479.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 2048-7-7-1-512-1-0
+manual conv time: 36531.0
+manual directconv time: 152467.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:287265.0
+manual Directconv time:467971.0
+manual Winogradconv time:0
+best possible time:287265.0
+predicted time for the network:287265.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing AlexNet
+Analyzing: 3-227-227-11-96-4-0
+manual conv time: 73857.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-27-27-5-256-1-2
+manual conv time: 167163.0
+manual directconv time: null
+manual winogradconvTime time: 77917.0
+predicted best: winogradconv
+
+
+Analyzing: 256-13-13-3-384-1-1
+manual conv time: 72111.0
+manual directconv time: 180547.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-13-13-3-384-1-1
+manual conv time: 132393.0
+manual directconv time: 222513.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 384-13-13-3-256-1-1
+manual conv time: 92066.0
+manual directconv time: 204228.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:537590.0
+manual Directconv time:607288.0
+manual Winogradconv time:77917.0
+best possible time:448344.0
+predicted time for the network:448344.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing FCN-16s
+Analyzing: 3-500-500-3-64-1-1
+manual conv time: 318541.0
+manual directconv time: 285898.0
+manual winogradconvTime time: 254376.0
+predicted best: winogradconv
+
+
+Analyzing: 64-250-250-3-128-1-1
+manual conv time: 1100421.0
+manual directconv time: null
+manual winogradconvTime time: 266678.0
+predicted best: winogradconv
+
+
+Analyzing: 256-63-63-3-512-1-1
+manual conv time: 860987.0
+manual directconv time: 1472462.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:2279949.0
+manual Directconv time:1758360.0
+manual Winogradconv time:521054.0
+best possible time:1382041.0
+predicted time for the network:1382041.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing GoogLeNet
+Analyzing: 3-227-227-7-64-2-3
+manual conv time: 108140.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-28-28-1-16-1-1
+manual conv time: 7676.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 16-28-28-5-32-1-2
+manual conv time: 10200.0
+manual directconv time: null
+manual winogradconvTime time: 4865.0
+predicted best: winogradconv
+
+
+Results:
+manual Conv time:126016.0
+manual Directconv time:0
+manual Winogradconv time:4865.0
+best possible time:120681.0
+predicted time for the network:120681.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing Network-in-Network
+Analyzing: 3-224-224-11-96-4-0
+manual conv time: 70669.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 96-27-27-5-256-1-2
+manual conv time: 167163.0
+manual directconv time: null
+manual winogradconvTime time: 77917.0
+predicted best: winogradconv
+
+
+Analyzing: 384-6-6-3-1024-1-1
+manual conv time: 46440.0
+manual directconv time: 150025.0
+manual winogradconvTime time: 478782.0
+predicted best: conv
+
+
+Results:
+manual Conv time:284272.0
+manual Directconv time:150025.0
+manual Winogradconv time:556699.0
+best possible time:195026.0
+predicted time for the network:195026.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing VGG-16
+Analyzing: 128-112-112-3-128-1-1
+manual conv time: 453019.0
+manual directconv time: null
+manual winogradconvTime time: 116950.0
+predicted best: winogradconv
+
+
+Results:
+manual Conv time:453019.0
+manual Directconv time:0
+manual Winogradconv time:116950.0
+best possible time:116950.0
+predicted time for the network:116950.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:10570645.0 | 356 experiments successfully achieved on 356
+Manual with directconv:16078462.0 | 333 experiments successfully achieved on 356
+Manual with winogradconv:1837275.0 | 22 experiments successfully achieved on 356
+With dynamic prediction of the algorithm:8261219.0 | 356 experiments successfully achieved on 356
+Best possible time:7971363.0
+
+
+Done!
