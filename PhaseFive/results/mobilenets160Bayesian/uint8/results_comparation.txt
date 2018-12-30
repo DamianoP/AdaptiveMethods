@@ -5,6 +5,7 @@ Ranking File loaded
 Shapes File loaded
 Data loaded correctly
 Preprocessing ended
+Analyzing MobileNet_1.0_160
 Analyzing: 1024-1-1-1-1001-1-0
 manual conv time: 24912.0
 manual directconv time: 11609.0

@@ -5,6 +5,7 @@ Ranking File loaded
 Shapes File loaded
 Data loaded correctly
 Preprocessing ended
+Analyzing AlexNet
 Analyzing: 3-227-227-11-96-4-0
 manual conv time: 40024.0
 manual directconv time: null

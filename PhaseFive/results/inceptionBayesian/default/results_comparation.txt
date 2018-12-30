@@ -5,6 +5,7 @@ Ranking File loaded
 Shapes File loaded
 Data loaded correctly
 Preprocessing ended
+Analyzing InceptionV3
 Analyzing: 3-299-299-3-32-2-0
 manual conv time: 13836.0
 manual directconv time: 17806.0
