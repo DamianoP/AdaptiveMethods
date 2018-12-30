@@ -21,6 +21,7 @@ PhaseFour explains how to get the results of the analysis and contains some expe
 <br/><br/>
 In these example images you can see the bar chart.
 The height of the bars indicates the running time.
+<br/>
 Please note that at the bottom of each bar is the number of successful experiments on the dataset taken into consideration.
 <img align="left" width="500" height="500" src="PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true">
 <img align="right" width="500" height="500" src="PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true">
