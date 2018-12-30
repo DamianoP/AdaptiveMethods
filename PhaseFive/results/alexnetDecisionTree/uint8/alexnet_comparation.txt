@@ -1,0 +1,82 @@
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+loading model...
+model loaded !
+Analyzing: 3-227-227-11-96-4-0
+manual conv time: 37988.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:37988.0
+manual Directconv time:0
+manual Winogradconv time:0
+best possible time:37988.0
+predicted time for the network:37988.0
+-----------------------------------------------------------
+
+ 
+ 
+
+Analyzing AlexNet
+Analyzing: 96-27-27-5-256-1-2
+manual conv time: 134069.0
+manual directconv time: null
+manual winogradconvTime time: 78291.0
+predicted best: conv
+
+
+Analyzing: 256-13-13-3-384-1-1
+manual conv time: 49313.0
+manual directconv time: 95844.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 384-13-13-3-384-1-1
+manual conv time: 73416.0
+manual directconv time: 150464.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 384-13-13-3-256-1-1
+manual conv time: 49908.0
+manual directconv time: 106417.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:306706.0
+manual Directconv time:352725.0
+manual Winogradconv time:78291.0
+best possible time:250928.0
+predicted time for the network:486794.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:344694.0 | 5 experiments successfully achieved on 5
+Manual with directconv:352725.0 | 3 experiments successfully achieved on 5
+Manual with winogradconv:78291.0 | 1 experiments successfully achieved on 5
+With dynamic prediction of the algorithm:524782.0 | 5 experiments successfully achieved on 5
+Best possible time:288916.0
+
+
+Done!
