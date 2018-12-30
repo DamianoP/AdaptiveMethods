@@ -18,4 +18,6 @@ PhaseFour explains how to get a model to use with machine learning techniques
 PhaseFour explains how to get the results of the analysis and contains some experiments carried out by me
 
 
-![Alt text](PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true "Title")
+![Alt text](PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true "Title" | width=300)
+
+![Alt text](PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true "Title" | width=300)
