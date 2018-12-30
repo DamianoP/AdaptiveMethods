@@ -19,20 +19,23 @@ def myPrint(string):
 	print(string)
 	newFile.write(string+"\n")
 
+print("Please insert the name of the folder and the precisione for the experiments")
+print("Inside the folder the script need the model")
+print("Then the script will search for a nested folder called 'default' or 'uint', and then inside this folder you must have the file 'data.csv' with the tensors, and the ranking file 'ranking.txt'")
 
-folder			="alexnetDecisionTree"	#raw_input("Name of folder: ")
-fileName		="results"		#raw_input("Name of dataset: ")
-precision		="default"
+folder			=raw_input("Name of folder (example alexnetDecisionTree): ") #"alexnetDecisionTree"	
+precision		=raw_input("Precision (default or uint8): ")#"default"
 path			=folder+"/"+precision
 shapeCSV		=path+"/data.csv"
 rankingFile		=path+"/ranking.txt"
 
+fileName		="results"		#raw_input("Name of dataset: ")
 newFile			=open(path+"/"+fileName+"_comparation.txt","w")
 accuracy		=0
-tuner 			="false"
-architecture	="midgard"
-classifierName	="Decision tree"
-images			=1 #1 for generate the images, 0 for generate only the text file
+tuner 			=raw_input("Tuner (false / true): ")#"false"
+architecture	=raw_input("Architecture (midgard / byfrost): ")#"midgard"
+classifierName	=raw_input("Classifier name (for example: Decision tree): ")
+images			=raw_input("Image graph generation (digit 1 for yes, or 0 for not): ")#1 for generate the images, 0 for generate only the text file
 modelName=folder
 myPrint("loading model...")
 clf = load(folder+"/"+modelName+".joblib")
@@ -369,25 +372,3 @@ myPrint("\n")
 myPrint("Done!")
 newFile.close()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##################################################
-######				CODE BACKUP				######
-#X=[[]]
-#X[0]=[48,35,35,5,64,1,2,0,0,0]
-#print clf.predict(X)[0]
-#return a+bprint("Working..")
-##################################################
