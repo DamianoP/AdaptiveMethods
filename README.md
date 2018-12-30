@@ -6,11 +6,11 @@ This repository contains all the codes necessary to reproduce the experiments an
 The work has been enclosed in various folders with a name that describes the phase to be addressed.
 <br/>
 I recommend following the steps from the first to the last.
-<br/>
+<br/><br/>
 The PhaseOne explains how to create a dataset for experiments.
-<br/>
+<br/><br/>
 The PhaseTwo explains how to perform the experiments and collect the results.
-<br/>
+<br/><br/>
 The PhaseThree explains how to read the results and get a .arff file
-<br/>
+<br/><br/>
 PhaseFour explains how to get a model to use with machine learning techniques
