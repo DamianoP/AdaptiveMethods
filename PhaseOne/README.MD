@@ -3,7 +3,7 @@ PhaseOne:
 With this script you can create your custom dataset.<br/>
 Run the script with<br/>
 ```
-python MakeDataset.py
+python makeDataset.py
 ```
 <br/><br/>
 In output a csv file will be provided to be used in the following phases
