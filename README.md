@@ -21,3 +21,5 @@ PhaseFour explains how to get the results of the analysis and contains some expe
 ![Alt text](PhaseFive/results/decisionTreeALL/default/img/global.png?raw=true "Title" | width=300)
 
 ![Alt text](PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true "Title" | width=300)
+
+<img align="left" width="100" height="100" src="PhaseFive/results/decisionTreeALL/default/img/AlexNet.png?raw=true">
