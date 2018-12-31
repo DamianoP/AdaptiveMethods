@@ -21,7 +21,7 @@ def myPrint(string):
 
 print("Please insert the name of the folder and the precisione for the experiments")
 print("Inside the folder the script need the model")
-print("Then the script will search for a nested folder called 'default' or 'uint', and then inside this folder you must have the file 'data.csv' with the tensors, and the ranking file 'ranking.txt'")
+print("Then the script will search for a nested folder called 'default' or 'uint8', and then inside this folder you must have the file 'data.csv' with the tensors, and the ranking file 'ranking.txt'")
 
 folder			=raw_input("Name of folder (example alexnetDecisionTree): ") #"alexnetDecisionTree"	
 precision		=raw_input("Precision (default or uint8): ")#"default"
