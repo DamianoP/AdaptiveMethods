@@ -1,0 +1,2 @@
+,W,H,C_IN,KERNEL_SIZE,C_OUT (filters count),STRIDE,PAD,,Layer name
+VGG-16,112,112,128,3,128,1,1,,conv2_2

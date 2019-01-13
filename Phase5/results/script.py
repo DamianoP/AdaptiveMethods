@@ -22,7 +22,7 @@ def myPrint(string):
 
 print("Please insert the name of the folder and the precisione for the experiments")
 print("Inside the folder the script need the model")
-print("Then the script will search for a nested folder called 'default' or 'uint', and then inside this folder you must have the file 'data.csv' with the tensors, and the ranking file 'ranking.txt'")
+print("Then the script will search for a nested folder called 'default' or 'uint8', and then inside this folder you must have the file 'data.csv' with the tensors, and the ranking file 'ranking.txt'")
 if(len(sys.argv)>1):
 	folder 		=sys.argv[1]
 else:
@@ -56,7 +56,7 @@ os.system("mkdir "+path+"/img")
 #PREPROCESSING
 
 
-
+precisionText=precision
 if(tuner=="false"):
 	tuner=0
 else:
@@ -143,11 +143,13 @@ nLocalPredicted					=0
 nLocalConv						=0
 nLocalDirectConv				=0
 nLocalWinograd					=0
+
+
+shapesNumber 					=0
 myPrint("Preprocessing ended")
 #END PREPROCESSING
 currentNetwork="_empty"
 ax=""
-
 def autolabel(rects, text):
 	global ax
 	rect=rects[0]
@@ -159,11 +161,25 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 					numPred,numPredConv,numPredDirect,numPredWinog,
 					bestTimeConv,bestTimeDirect,bestTimeWinog,
 					nBestConv,nBestDirect,nBestWinog):
-	global ax
-	imgName=str(imgName)
+	global ax,shapesNumber
+	imgName=str(imgName)	
+	if(imgName[0]!="["):
+		if(imgName!="global"):
+			if(shapesNumber>1):
+				imgTitle=imgName+": "+str(shapesNumber)+" convolution layers"
+			else:
+				imgTitle=imgName+": "+str(shapesNumber)+" convolution layer"				
+		else:#else for the "global" images
+			if(shapesNumber>1):
+				imgTitle=imgName+": "+str(shapesNumber)+" shapes"
+			else:
+				imgTitle=imgName+": "+str(shapesNumber)+" shape"
+	else:
+		imgTitle=imgName
 	xLabels=[]
 	plt.figure(figsize=(10,10))
 	plt.rcParams.update({'font.size': 14})
+
 
 	if(time1=="null"):
 		time1=0
@@ -188,27 +204,50 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 	bestTimeTotal=bestTimeConv+bestTimeDirect+bestTimeWinog
 	
 	if(numConv!="null"):
-		convSTR="Conv"	+"\n"+str(time1)		+"\n"+str(numConv)		+" exp"
+		convSTR="Conv"	+"\n"+str(time1)		+"\n"
+		if(numConv<=1):
+			convSTR+=str(numConv)		+" layer"
+		else:			
+			convSTR+=str(numConv)		+" layers"
 	else:
 		convSTR="Conv" +"\n"+str(time1)
 
 	if(numDirect!="null"):
-		directSTR="Directconv"	+"\n"+str(time2)	+"\n"+str(numDirect)	+" exp"
+		directSTR="Directconv"	+"\n"+str(time2)	+"\n"
+		if(numDirect<=1):
+			directSTR+=str(numDirect)		+" layer"
+		else:			
+			directSTR+=str(numDirect)		+" layers"
 	else:
 		directSTR="Directconv"+"\n"+str(time2)
 
 	if(numWinog!="null"):
-		winogSTR="Winograd" +"\n"+str(time3)	+"\n"+str(numWinog)	+" exp"
+		winogSTR="Winograd" +"\n"+str(time3)	+"\n"
+		if(numWinog<=1):
+			winogSTR+=str(numWinog)		+" layer"
+		else:			
+			winogSTR+=str(numWinog)		+" layers"
 	else:
 		winogSTR="Winograd" +"\n"+str(time3)
 
 	if(numPred!="null"):
-		predicSTR="Predicted"	+"\n"+str(predictedTimeTotal)	+"\n"+str(numPred)	+" exp \n"+"("+str(numPredConv)+", "+str(numPredDirect)+", "+str(numPredWinog)+")"
+		predicSTR="Predicted"	+"\n"+str(predictedTimeTotal)	+"\n"
+		if(numPred<=1):
+			predicSTR+=str(numPred)		+" layer"
+		else:			
+			predicSTR+=str(numPred)		+" layers"
+
+		predicSTR+="\n"+"("+str(numPredConv)+", "+str(numPredDirect)+", "+str(numPredWinog)+")"
 	else:
 		predicSTR="Predicted" +"\n"+str(predictedTimeTotal)
 
 	bestcount=nBestConv+nBestDirect+nBestWinog
-	bestSTR="Oracle" +"\n"+str(bestTimeTotal)+"\n"+str(bestcount)	+" exp \n"+"("+str(nBestConv)+", "+str(nBestDirect)+", "+str(nBestWinog)+")"
+	bestSTR="Oracle" +"\n"+str(bestTimeTotal)+"\n"
+	if(bestcount<=1):
+		bestSTR+=str(bestcount)		+" layer"
+	else:			
+		bestSTR+=str(bestcount)		+" layers"
+	bestSTR+="\n"+"("+str(nBestConv)+", "+str(nBestDirect)+", "+str(nBestWinog)+")"
 
 	ind = np.arange(5)    # the x locations for the groups
 	width = 0.35       # the width of the bars: can also be len(x) sequence
@@ -242,7 +281,7 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 	p3 = plt.bar(ind, b3, width,bottom=bottomValue)
 
 	plt.ylabel('Execution Time (microseconds)')
-	plt.title(imgName)
+	plt.title(folder+" "+precisionText+"\n"+imgTitle)
 	plt.xticks(ind, (convSTR, directSTR, winogSTR, predicSTR, bestSTR))
 	plt.legend((p1[0], p2[0], p3[0]), ('Conv', 'Directconv','Winograd'),loc='upper center', bbox_to_anchor=(1,1.14), fancybox=True, shadow=True,ncol=1)
 	
@@ -297,7 +336,7 @@ def middleReport():
 ##################
 #MAIN
 ##################
-
+shapesNumber=len(shapes)
 for i in range(1,len(shapes)):
 	shape=shapes[i].split(",")	
 	if(len(shape[0])==0 and len(shape[1])==0 and len(shape[2])==0 ): #"skipping case : ',,,,,,,,' "

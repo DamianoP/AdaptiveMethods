@@ -1,0 +1,43 @@
+loading model...
+model loaded !
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+Analyzing VGG-16
+Analyzing: 128-112-112-3-128-1-1
+manual conv time: 267970.0
+manual directconv time: null
+manual winogradconvTime time: 199331.0
+predicted best: conv
+
+
+Results:
+manual Conv time:267970.0
+manual Directconv time:0
+manual Winogradconv time:199331.0
+best possible time:199331.0
+predicted time for the network:267970.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:267970.0 | 1 experiments successfully achieved on 1
+Manual with directconv:0 | 0 experiments successfully achieved on 1
+Manual with winogradconv:199331.0 | 1 experiments successfully achieved on 1
+With dynamic prediction of the algorithm:267970.0 | 1 experiments successfully achieved on 1
+Best possible time:199331.0
+
+
+Done!

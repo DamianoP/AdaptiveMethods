@@ -1,0 +1,4 @@
+,W,H,C_IN,KERNEL_SIZE,C_OUT (filters count),STRIDE,PAD,,Layer name
+GoogLeNet,227,227,3,7,64,2,3,,conv1/7x7_s2
+GoogLeNet,28,28,192,1,16,1,1,,inception_3a/5x5_reduce
+GoogLeNet,28,28,16,5,32,1,2,,inception_3a/5x5
