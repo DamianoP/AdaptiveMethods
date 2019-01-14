@@ -146,6 +146,7 @@ nLocalWinograd					=0
 
 
 shapesNumber 					=0
+localShapeCounter 				=0
 myPrint("Preprocessing ended")
 #END PREPROCESSING
 currentNetwork="_empty"
@@ -161,14 +162,14 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 					numPred,numPredConv,numPredDirect,numPredWinog,
 					bestTimeConv,bestTimeDirect,bestTimeWinog,
 					nBestConv,nBestDirect,nBestWinog):
-	global ax,shapesNumber
+	global ax,shapesNumber,localShapeCounter
 	imgName=str(imgName)	
 	if(imgName[0]!="["):
 		if(imgName!="global"):
 			if(shapesNumber>1):
-				imgTitle=imgName+": "+str(shapesNumber)+" convolution layers"
+				imgTitle=imgName+": "+str(localShapeCounter)+" convolution layers"
 			else:
-				imgTitle=imgName+": "+str(shapesNumber)+" convolution layer"				
+				imgTitle=imgName+": "+str(localShapeCounter)+" convolution layer"				
 		else:#else for the "global" images
 			if(shapesNumber>1):
 				imgTitle=imgName+": "+str(shapesNumber)+" shapes"
@@ -295,7 +296,7 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 
 
 def middleReport():
-	global localTimeConv,localTimeDirectConv,localTimeWinogradConv,localBestTime,predictedBest,localPredictedTime,classifierName,currentNetwork,images,nLocalConv,nLocalPredicted,nLocalWinograd,nLocalDirectConv,localTimePredictedConv,localTimePredictedDirectConv,localTimePredictedWinogradConv,localPredConv,localPredDirect,localPredWinog,localCounterBestConv,localCounterBestDirectconv,localCounterBestWinogradconv,localBestTimeConv,localBestTimedirectconv,localBestTimeWinogradcon
+	global localTimeConv,localTimeDirectConv,localTimeWinogradConv,localBestTime,predictedBest,localPredictedTime,classifierName,currentNetwork,images,nLocalConv,nLocalPredicted,nLocalWinograd,nLocalDirectConv,localTimePredictedConv,localTimePredictedDirectConv,localTimePredictedWinogradConv,localPredConv,localPredDirect,localPredWinog,localCounterBestConv,localCounterBestDirectconv,localCounterBestWinogradconv,localBestTimeConv,localBestTimedirectconv,localBestTimeWinogradcon,localShapeCounter
 	myPrint("Results:")
 	myPrint("manual Conv time:"					+str(localTimeConv))
 	myPrint("manual Directconv time:"			+str(localTimeDirectConv))
@@ -332,11 +333,12 @@ def middleReport():
 	localBestTimeConv=0
 	localBestTimedirectconv=0
 	localBestTimeWinogradcon=0
+	localShapeCounter=0
 
 ##################
 #MAIN
 ##################
-shapesNumber=len(shapes)
+shapesNumber=len(shapes)-1
 for i in range(1,len(shapes)):
 	shape=shapes[i].split(",")	
 	if(len(shape[0])==0 and len(shape[1])==0 and len(shape[2])==0 ): #"skipping case : ',,,,,,,,' "
@@ -358,7 +360,7 @@ for i in range(1,len(shapes)):
 	winogradconvTime	="null"
 	predictedTimeShape	="null"
 	finded				=False
-
+	localShapeCounter  +=1
 	bestShapeConv		=0
 	bestShapeDirect		=0
 	bestShapeWinog 		=0
