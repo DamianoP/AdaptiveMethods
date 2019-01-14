@@ -90,6 +90,7 @@ if(len(value)>1):
 	title=raw_input("Please insert the image title (example alexnet): ")
 else:
 	print("No value collected, aborting")
+	sys.exit()
 
 #########################################
 #Making value for the graph
