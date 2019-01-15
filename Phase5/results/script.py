@@ -496,4 +496,6 @@ myPrint("Done!")
 newFile.close()
 
 if(len(sys.argv)>3):
-	subprocess.Popen(["python","e.py",folder,sys.argv[3]])
+	subprocess.Popen(["python","script.py",folder,sys.argv[3]])
+else:
+	sys.exit()

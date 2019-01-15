@@ -98,7 +98,15 @@ predictedValue=[]
 oracleValue=[]
 labels=[]
 for i in range(0,len(value)):
-	labels.append(value[i][0]+" "+value[i][1]+"\n"+value[i][2]+"\n"+value[i][3])
+	print(value[i][0])
+	print(value[i][1])
+	print(value[i][2])
+	print(value[i][3])
+	print("\n\n")
+	try:
+		labels.append(value[i][0].split("_")[1]		+" "+value[i][1]+"\n"+value[i][2]+"\n"+value[i][3])
+	except:
+		labels.append(value[i][0]+" "+value[i][1]	+"\n"+value[i][2]+"\n"+value[i][3])
 	predictedValue.append(float(value[i][2]))
 	oracleValue.append(float(value[i][3]))
 
