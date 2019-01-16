@@ -6,6 +6,7 @@ import re
 import IPython as ip
 import pandas as pd
 import matplotlib
+from matplotlib.patches import Rectangle
 matplotlib.use('Agg')
 import numpy as np
 import matplotlib as mp
@@ -163,18 +164,21 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 					bestTimeConv,bestTimeDirect,bestTimeWinog,
 					nBestConv,nBestDirect,nBestWinog):
 	global ax,shapesNumber,localShapeCounter
-	imgName=str(imgName)	
+	imgName=str(imgName)
+	lcounter=0	
 	if(imgName[0]!="["):
 		if(imgName!="global"):
-			if(shapesNumber>1):
+			if(localShapeCounter>1):
 				imgTitle=imgName+": "+str(localShapeCounter)+" convolution layers"
 			else:
-				imgTitle=imgName+": "+str(localShapeCounter)+" convolution layer"				
+				imgTitle=imgName+": "+str(localShapeCounter)+" convolution layer"		
+			lcounter=localShapeCounter
 		else:#else for the "global" images
 			if(shapesNumber>1):
 				imgTitle=imgName+": "+str(shapesNumber)+" shapes"
 			else:
 				imgTitle=imgName+": "+str(shapesNumber)+" shape"
+			lcounter=shapesNumber
 	else:
 		imgTitle=imgName
 	xLabels=[]
@@ -284,7 +288,34 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 	plt.ylabel('Execution Time (microseconds)')
 	plt.title(folder+" "+precisionText+"\n"+imgTitle)
 	plt.xticks(ind, (convSTR, directSTR, winogSTR, predicSTR, bestSTR))
-	plt.legend((p1[0], p2[0], p3[0]), ('Conv', 'Directconv','Winograd'),loc='upper center', bbox_to_anchor=(1,1.14), fancybox=True, shadow=True,ncol=1)
+
+
+
+	if(imgName[0]!="["):
+		if(numConv!=lcounter):
+			plt.gca().get_xticklabels()[0].set_color("red")
+		if(numDirect!=lcounter):
+			plt.gca().get_xticklabels()[1].set_color("red")
+		if(numWinog!=lcounter):
+			plt.gca().get_xticklabels()[2].set_color("red")
+		if(numPred!=lcounter):
+			plt.gca().get_xticklabels()[3].set_color("red")
+		if(bestcount!=lcounter):
+			plt.gca().get_xticklabels()[4].set_color("red")
+	if(time1==0):
+		plt.gca().get_xticklabels()[0].set_color("red")
+	if(time2==0):
+		plt.gca().get_xticklabels()[1].set_color("red")
+	if(time3==0):
+		plt.gca().get_xticklabels()[2].set_color("red")
+	if(predictedTimeTotal==0):
+		plt.gca().get_xticklabels()[3].set_color("red")
+	if(bestTimeTotal==0):
+		plt.gca().get_xticklabels()[4].set_color("red")
+
+	extra = Rectangle((0, 0), 1, 1, fc="w", fill=False, edgecolor='none', linewidth=0)
+
+	plt.legend((p1[0], p2[0], p3[0],extra), ('Conv', 'Directconv','Winograd',"Red Text = Alert"),loc='upper center', bbox_to_anchor=(0.96,1.167), fancybox=True, shadow=True,ncol=1)
 	
 
 
