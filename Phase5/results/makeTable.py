@@ -41,7 +41,7 @@ def getValue(folder,precision):
     if(error==0):
       results="A="+accuracy+" S="+speedUp 
     else:
-      results="A="+accuracy+" S="+speedUp+"**" 
+      results="A="+accuracy+" S=X **" 
   except Exception as e:
     print(e)        
   return results

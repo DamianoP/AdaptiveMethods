@@ -46,13 +46,20 @@ def getValue(folder,precision):
 		predictionValue =""
 		oracleValue		=""
 		localValue		=[]
+		nPred			=0
+		nShape			=0
 		for line in file:
 			line=line.strip()
 			if(line=="Final Report:"):
 				read=1
 			if(read==1):
 				if(line.find("With dynamic prediction of the algorithm:")!=-1):
-					predictionValue=line.split(":")[1].split("|")[0].strip()
+					nPred =line.split(":")[1].split("|")[1].split("experiments")[0].strip()
+					nShape=line.split(":")[1].split("|")[1].split("on")[1].strip()
+					if(nPred!=nShape):
+						predictionValue=0
+					else:
+						predictionValue=line.split(":")[1].split("|")[0].strip()
 				elif(line.find("Best possible time:")!=-1):
 					oracleValue=line[len("Best possible time:"):].strip()
 		if(predictionValue!="" and oracleValue!=""):
@@ -71,8 +78,9 @@ def getValue(folder,precision):
 		localValue.append(0)
 		return localValue
 
-if(len(sys.argv)>1):
-	for i in range(1,len(sys.argv)):
+if(len(sys.argv)>2):
+	title=sys.argv[1]
+	for i in range(2,len(sys.argv)):
 		folders.append(sys.argv[i])
 else:
 	print("No arguments, script terminated")
@@ -85,9 +93,9 @@ for i in range(0, len(folders)):
 	readedValue		=getValue(folders[i],"uint8")
 	value.append(readedValue)
 
-title=""
+
 if(len(value)>1):
-	title=raw_input("Please insert the image title (example alexnet): ")
+	print("Starting..")
 else:
 	print("No value collected, aborting")
 	sys.exit()
@@ -104,9 +112,9 @@ for i in range(0,len(value)):
 	print(value[i][3])
 	print("\n\n")
 	try:
-		labels.append(value[i][0].split("_")[1]		+" "+value[i][1]+"\n"+value[i][2]+"\n"+value[i][3])
+		labels.append(str(value[i][0].split("_")[1])		+" "+str(value[i][1])+"\n"+str(value[i][2])+"\n"+str(value[i][3]))
 	except:
-		labels.append(value[i][0]+" "+value[i][1]	+"\n"+value[i][2]+"\n"+value[i][3])
+		labels.append(str(value[i][0])+" "+str(value[i][1])	+"\n"+str(value[i][2])+"\n"+str(value[i][3]))
 	predictedValue.append(float(value[i][2]))
 	oracleValue.append(float(value[i][3]))
 
