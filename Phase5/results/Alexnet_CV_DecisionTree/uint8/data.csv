@@ -1,0 +1,6 @@
+,W,H,C_IN,KERNEL_SIZE,C_OUT (filters count),STRIDE,PAD,,Layer name
+AlexNet,227,227,3,11,96,4,0,,conv1
+AlexNet,27,27,96,5,256,1,2,,conv2
+AlexNet,13,13,256,3,384,1,1,,conv3
+AlexNet,13,13,384,3,384,1,1,,conv4
+AlexNet,13,13,384,3,256,1,1,,conv5

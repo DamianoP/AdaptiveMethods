@@ -50,8 +50,9 @@ clf = load(folder+"/"+modelName+".joblib")
 myPrint("model loaded !") 
 	
 #########
-os.system("rm -r "+path+"/img")
-os.system("mkdir "+path+"/img")
+if(images==1):
+	os.system("rm -r "+path+"/img")
+	os.system("mkdir "+path+"/img")
 #########
 
 #PREPROCESSING
@@ -144,7 +145,7 @@ nLocalPredicted					=0
 nLocalConv						=0
 nLocalDirectConv				=0
 nLocalWinograd					=0
-
+nCorrectPredicted				=0
 
 shapesNumber 					=0
 localShapeCounter 				=0
@@ -286,7 +287,22 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 	p3 = plt.bar(ind, b3, width,bottom=bottomValue)
 
 	plt.ylabel('Execution Time (microseconds)')
-	plt.title(folder+" "+precisionText+"\n"+imgTitle)
+	
+	if(precisionText=="default"):
+		precisionImage="fp32"
+	else:
+		precisionImage=precisionText
+	
+	folderText=""
+	temp=folder.split("_")
+	for o in range(0,len(temp)):
+		if(o==0):
+			folderText+=temp[o]
+		else:
+			folderText+=","+temp[o]
+
+
+	plt.title(folderText+" "+precisionImage+"\n"+imgTitle)
 	plt.xticks(ind, (convSTR, directSTR, winogSTR, predicSTR, bestSTR))
 
 
@@ -315,7 +331,7 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 
 	extra = Rectangle((0, 0), 1, 1, fc="w", fill=False, edgecolor='none', linewidth=0)
 
-	plt.legend((p1[0], p2[0], p3[0],extra), ('Conv', 'Directconv','Winograd',"Red Text = Alert"),loc='upper center', bbox_to_anchor=(0.96,1.167), fancybox=True, shadow=True,ncol=1)
+	plt.legend((p1[0], p2[0], p3[0],extra), ('Conv', 'Directconv','Winograd',"Red = Failure"),loc='upper center', bbox_to_anchor=(0.96,1.167), fancybox=True, shadow=True,ncol=1)
 	
 
 
@@ -504,9 +520,13 @@ for i in range(1,len(shapes)):
 	h=x+y+z
 	if (images==1):
 		generateImage(workingShapeARFF,convTime,directconvTime,winogradconvTime,cPred,dPred,wPred,"",classifierName,"null","null","null",h,x,y,z,bestShapeConv,bestShapeDirect,bestShapeWinog,cB,dB,wB) # image for the shape
-
+	if(predictedBest==realBest):
+		nCorrectPredicted+=1
 	# SHAPE + time 1, time 2, time 3, time predicted, predicted method as string 
 middleReport() #last shape
+
+speedUp= round(((float(globalTimeConv)/float(globalPredictedTime))*float(100))-100,2)
+accuracy=round(float(nCorrectPredicted)/float(nShapes)*float(100),2)
 myPrint("\n")
 myPrint("\n")
 myPrint("-----------------------------------------------------------")
@@ -518,6 +538,8 @@ myPrint("Manual with directconv:"					+str(globalTimeDirectConv)	+ " | " + str(n
 myPrint("Manual with winogradconv:"					+str(globalTimeWinogradConv)+ " | " + str(nWinograd) 	+" experiments successfully achieved on "+str(nShapes) )
 myPrint("With dynamic prediction of the algorithm:"	+str(globalPredictedTime)	+ " | " + str(nPredicted) 	+" experiments successfully achieved on "+str(nShapes) )
 myPrint("Best possible time:"						+str(globalBestTime) )
+myPrint("Accuracy:"+str(accuracy)+"%")
+myPrint("SpeedUp:" +str(speedUp)+"%")
 if (images==1):
 		generateImage("global",globalTimeConv,globalTimeDirectConv,globalTimeWinogradConv,globalTimePredictedConv,globalTimePredictedDirectConv,globalTimePredictedWinogradConv,"",classifierName,nConv,nDirectConv,nWinograd,nPredicted,globalPredConv,globalPredDirect,globalPredWinog,			globalBestTimeConv,globalBestTimedirectconv,globalBestTimeWinogradcon,globalCounterBestConv,globalCounterBestDirectconv,globalCounterBestWinogradconv)
 

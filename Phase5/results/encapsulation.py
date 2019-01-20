@@ -19,7 +19,7 @@ def waitAndClean(processes):
 				localProcesses.remove(p)
 				removed=1
 		if(removed==0):
-			time.sleep(5)
+			time.sleep(2)
 	return localProcesses
 
 

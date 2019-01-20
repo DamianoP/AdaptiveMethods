@@ -6,6 +6,27 @@ Shapes File loaded
 Data loaded correctly
 Preprocessing ended
 Analyzing VGG-16
+Analyzing: 3-224-224-3-64-1-1
+manual conv time: 63898.0
+manual directconv time: 69420.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-224-224-3-64-1-1
+manual conv time: 324093.0
+manual directconv time: 532335.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-112-112-3-128-1-1
+manual conv time: 187485.0
+manual directconv time: 480094.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
 Analyzing: 128-112-112-3-128-1-1
 manual conv time: 258223.0
 manual directconv time: 472849.0
@@ -13,12 +34,75 @@ manual winogradconvTime time: null
 predicted best: directconv
 
 
+Analyzing: 128-56-56-3-256-1-1
+manual conv time: 169196.0
+manual directconv time: 264816.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-56-56-3-256-1-1
+manual conv time: 169196.0
+manual directconv time: 264816.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-56-56-3-256-1-1
+manual conv time: 243470.0
+manual directconv time: 382897.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-28-28-3-512-1-1
+manual conv time: 198412.0
+manual directconv time: 244720.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-28-28-3-512-1-1
+manual conv time: 198412.0
+manual directconv time: 244720.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-28-28-3-512-1-1
+manual conv time: 229025.0
+manual directconv time: 476637.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-3-512-1-1
+manual conv time: 116017.0
+manual directconv time: 171126.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-3-512-1-1
+manual conv time: 116017.0
+manual directconv time: 171126.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-14-14-3-512-1-1
+manual conv time: 116017.0
+manual directconv time: 171126.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
 Results:
-manual Conv time:258223.0
-manual Directconv time:472849.0
+manual Conv time:2389461.0
+manual Directconv time:3946682.0
 manual Winogradconv time:0
-best possible time:258223.0
-predicted time for the network:472849.0
+best possible time:2389461.0
+predicted time for the network:3325501.0
 -----------------------------------------------------------
 
  
@@ -33,11 +117,13 @@ predicted time for the network:472849.0
 
 Final Report:
 If you run all the dataset you will get this time:
-Manual with conv:258223.0 | 1 experiments successfully achieved on 1
-Manual with directconv:472849.0 | 1 experiments successfully achieved on 1
-Manual with winogradconv:0 | 0 experiments successfully achieved on 1
-With dynamic prediction of the algorithm:472849.0 | 1 experiments successfully achieved on 1
-Best possible time:258223.0
+Manual with conv:2389461.0 | 13 experiments successfully achieved on 13
+Manual with directconv:3946682.0 | 13 experiments successfully achieved on 13
+Manual with winogradconv:0 | 0 experiments successfully achieved on 13
+With dynamic prediction of the algorithm:3325501.0 | 13 experiments successfully achieved on 13
+Best possible time:2389461.0
+Accuracy:38.46%
+SpeedUp:-28.15%
 
 
 Done!

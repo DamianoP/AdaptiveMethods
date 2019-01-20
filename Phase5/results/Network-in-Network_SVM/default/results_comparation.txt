@@ -52,6 +52,8 @@ Manual with directconv:109616.0 | 1 experiments successfully achieved on 3
 Manual with winogradconv:563772.0 | 2 experiments successfully achieved on 3
 With dynamic prediction of the algorithm:146059.0 | 2 experiments successfully achieved on 3
 Best possible time:162066.0
+Accuracy:33.33%
+SpeedUp:49.15%
 
 
 Done!
