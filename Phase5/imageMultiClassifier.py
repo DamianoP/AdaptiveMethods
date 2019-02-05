@@ -46,20 +46,34 @@ def getValue(folder,precision):
 		predictionValue =""
 		oracleValue		=""
 		localValue		=[]
+		nPred			=0
+		nShape			=0
+		staticTime		=0
+		staticMethod	="None"
 		for line in file:
 			line=line.strip()
 			if(line=="Final Report:"):
 				read=1
 			if(read==1):
 				if(line.find("With dynamic prediction of the algorithm:")!=-1):
-					predictionValue=line.split(":")[1].split("|")[0].strip()
+					nPred =line.split(":")[1].split("|")[1].split("experiments")[0].strip()
+					nShape=line.split(":")[1].split("|")[1].split("on")[1].strip()
+					if(nPred!=nShape):
+						predictionValue=0
+					else:
+						predictionValue=line.split(":")[1].split("|")[0].strip()
 				elif(line.find("Best possible time:")!=-1):
-					oracleValue=line[len("Best possible time:"):].strip()
+					oracleValue		=line[len("Best possible time:"):].strip()
+				elif(line.find("Best static method:")!=-1):
+					staticTime		=line.split(":")[1].split("|")[0].strip()
+					staticMethod	=line.split(":")[1].split("| with")[1].strip()
 		if(predictionValue!="" and oracleValue!=""):
 			localValue.append(folders[i])
 			localValue.append(precision)
 			localValue.append(predictionValue)
 			localValue.append(oracleValue)
+			localValue.append(staticTime)
+			localValue.append(staticMethod)
 			file.close()
 			return localValue
 	except Exception as e:
@@ -69,10 +83,13 @@ def getValue(folder,precision):
 		localValue.append(precision)
 		localValue.append(0)
 		localValue.append(0)
+		localValue.append(0)
+		localValue.append("None")
 		return localValue
 
-if(len(sys.argv)>1):
-	for i in range(1,len(sys.argv)):
+if(len(sys.argv)>2):
+	title=sys.argv[1]
+	for i in range(2,len(sys.argv)):
 		folders.append(sys.argv[i])
 else:
 	print("No arguments, script terminated")
@@ -85,9 +102,9 @@ for i in range(0, len(folders)):
 	readedValue		=getValue(folders[i],"uint8")
 	value.append(readedValue)
 
-title=""
+
 if(len(value)>1):
-	title=raw_input("Please insert the image title (example alexnet): ")
+	print("Starting..")
 else:
 	print("No value collected, aborting")
 	sys.exit()
@@ -96,6 +113,7 @@ else:
 #Making value for the graph
 predictedValue=[]
 oracleValue=[]
+staticValue=[]
 labels=[]
 for i in range(0,len(value)):
 	print(value[i][0])
@@ -104,20 +122,26 @@ for i in range(0,len(value)):
 	print(value[i][3])
 	print("\n\n")
 	try:
-		labels.append(value[i][0].split("_")[1]		+" "+value[i][1]+"\n"+value[i][2]+"\n"+value[i][3])
+		stringLabel=str(value[i][0].split("_")[1])
+		if(value[i][0].split("_")>2):
+			stringLabel+="_"+str(value[i][0].split("_")[2])
+		stringLabel+=" "+str(value[i][1])+"\nPredicted: "+str(value[i][2])+"\nOracle: "+str(value[i][3])+"\n Best static: "+str(value[i][5])
+		labels.append(stringLabel)
 	except:
-		labels.append(value[i][0]+" "+value[i][1]	+"\n"+value[i][2]+"\n"+value[i][3])
+		labels.append(str(value[i][0])+" "+str(value[i][1])	+"\n"+str(value[i][2])+"\n"+str(value[i][3]))
 	predictedValue.append(float(value[i][2]))
 	oracleValue.append(float(value[i][3]))
+	staticValue.append(float(value[i][4]))
 
 print predictedValue
 print oracleValue
 
 ind = np.arange(len(predictedValue))
-width = 0.35
+width = 0.23333
 fig, ax = plt.subplots(figsize=(30,10))
-rects1 = ax.bar(ind - width/2, predictedValue, 	width,color='SkyBlue', 		label='Predicted',bottom=0)
-rects2 = ax.bar(ind + width/2, oracleValue, 	width,color='IndianRed', 	label='Oracle',bottom=0)
+rects1 = ax.bar(ind - width,	predictedValue, 	width,color='SkyBlue', 		label='Predicted',			bottom=0)
+rects2 = ax.bar(ind ,			oracleValue, 		width,color='IndianRed', 	label='Oracle',				bottom=0)
+rects3 = ax.bar(ind + width,	staticValue, 		width,color='green', 		label='Best static method',	bottom=0)
 
 ax.set_ylabel('Execution Time (microseconds)')
 ax.set_title(title)

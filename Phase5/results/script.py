@@ -6,6 +6,7 @@ import re
 import IPython as ip
 import pandas as pd
 import matplotlib
+import time
 from matplotlib.patches import Rectangle
 matplotlib.use('Agg')
 import numpy as np
@@ -15,6 +16,7 @@ import ck.kernel as ck
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from IPython.display import Image, display
+from operator import itemgetter
 np.set_printoptions(threshold='nan')
 from joblib import load
 def myPrint(string):
@@ -27,7 +29,7 @@ print("Then the script will search for a nested folder called 'default' or 'uint
 if(len(sys.argv)>1):
 	folder 		=sys.argv[1]
 else:
-	folder			=raw_input("Name of folder (example alexnetDecisionTree): ") #"alexnetDecisionTree"	
+	folder			=raw_input("Name of folder (example dataset_DecisionTree_CV): ") #"alexnetDecisionTree"	
 if(len(sys.argv)>2):
 	precision		=sys.argv[2]
 else:
@@ -43,7 +45,7 @@ accuracy		=0
 tuner 			="false"#raw_input("Tuner (false / true): ")#"false"
 architecture	="midgard"#raw_input("Architecture (midgard / byfrost): ")#"midgard"
 classifierName	="ML"#raw_input("Classifier name (for example: Decision tree): ")
-images			=1#int(raw_input("Image graph generation (digit 1 for yes, or 0 for not): "))#1 for generate the images, 0 for generate only the text file
+images			=0#int(raw_input("Image graph generation (digit 1 for yes, or 0 for not): "))#1 for generate the images, 0 for generate only the text file
 modelName=folder
 myPrint("loading model...")
 clf = load(folder+"/"+modelName+".joblib")
@@ -400,6 +402,7 @@ for i in range(1,len(shapes)):
 	nShapes 		   +=1
 	workingShape		=shape[3]+"-"+shape[1]+"-"+shape[2]+"-"+shape[4]+"-"+shape[5]+"-"+shape[6]+"-"+shape[7]
 	workingShapeARFF	=shape[3]+","+shape[1]+","+shape[2]+","+shape[4]+","+shape[5]+","+shape[6]+","+shape[7]+","+str(tuner)+","+str(precision)+","+str(architecture)
+	print workingShapeARFF
 	workingShapeARFF	=eval("[["+workingShapeARFF+"]]")
 	predictedBest		=clf.predict(workingShapeARFF)[0]
 	convTime			="null"
@@ -525,7 +528,24 @@ for i in range(1,len(shapes)):
 	# SHAPE + time 1, time 2, time 3, time predicted, predicted method as string 
 middleReport() #last shape
 
-speedUp= round(((float(globalTimeConv)/float(globalPredictedTime))*float(100))-100,2)
+staticMethod=[]
+if(nConv==nShapes):
+	staticMethod.append([globalTimeConv,"Conv"])
+if(nDirectConv==nShapes):
+	staticMethod.append([globalTimeDirectConv,"Directconv"])
+if(nWinograd==nShapes):
+	staticMethod.append([globalTimeWinogradConv,"Winograd"])
+if(len(staticMethod)==0):
+	speedUp="+inf"
+	staticMethod.append(["0","none"])
+else:
+	staticMethod.sort(key=itemgetter(0))
+	speedUp= round(((float(staticMethod[0][0])/float(globalPredictedTime))*float(100))-100,2)
+
+
+
+if(speedUp>=0):
+	speedUp="+"+str(speedUp)
 accuracy=round(float(nCorrectPredicted)/float(nShapes)*float(100),2)
 myPrint("\n")
 myPrint("\n")
@@ -538,8 +558,10 @@ myPrint("Manual with directconv:"					+str(globalTimeDirectConv)	+ " | " + str(n
 myPrint("Manual with winogradconv:"					+str(globalTimeWinogradConv)+ " | " + str(nWinograd) 	+" experiments successfully achieved on "+str(nShapes) )
 myPrint("With dynamic prediction of the algorithm:"	+str(globalPredictedTime)	+ " | " + str(nPredicted) 	+" experiments successfully achieved on "+str(nShapes) )
 myPrint("Best possible time:"						+str(globalBestTime) )
+myPrint("Best static method:"						+str(staticMethod[0][0]) 	+ " | with "+str(staticMethod[0][1]))
 myPrint("Accuracy:"+str(accuracy)+"%")
 myPrint("SpeedUp:" +str(speedUp)+"%")
+myPrint(time.strftime("%d/%m/%Y %H:%M:%S")) 
 if (images==1):
 		generateImage("global",globalTimeConv,globalTimeDirectConv,globalTimeWinogradConv,globalTimePredictedConv,globalTimePredictedDirectConv,globalTimePredictedWinogradConv,"",classifierName,nConv,nDirectConv,nWinograd,nPredicted,globalPredConv,globalPredDirect,globalPredWinog,			globalBestTimeConv,globalBestTimedirectconv,globalBestTimeWinogradcon,globalCounterBestConv,globalCounterBestDirectconv,globalCounterBestWinogradconv)
 

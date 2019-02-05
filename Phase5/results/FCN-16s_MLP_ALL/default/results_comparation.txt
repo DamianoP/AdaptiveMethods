@@ -1,0 +1,61 @@
+loading model...
+model loaded !
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+Analyzing FCN-16s
+Analyzing: 3-500-500-3-64-1-1
+manual conv time: 153753.0
+manual directconv time: 202731.0
+manual winogradconvTime time: 235665.0
+predicted best: directconv
+
+
+Analyzing: 64-250-250-3-128-1-1
+manual conv time: 658940.0
+manual directconv time: 1025467.0
+manual winogradconvTime time: 294621.0
+predicted best: winogradconv
+
+
+Analyzing: 256-63-63-3-512-1-1
+manual conv time: 407712.0
+manual directconv time: 717400.0
+manual winogradconvTime time: null
+predicted best: winogradconv
+
+
+Results:
+manual Conv time:1220405.0
+manual Directconv time:1945598.0
+manual Winogradconv time:530286.0
+best possible time:856086.0
+predicted time for the network:497352.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:1220405.0 | 3 experiments successfully achieved on 3
+Manual with directconv:1945598.0 | 3 experiments successfully achieved on 3
+Manual with winogradconv:530286.0 | 2 experiments successfully achieved on 3
+With dynamic prediction of the algorithm:497352.0 | 2 experiments successfully achieved on 3
+Best possible time:856086.0
+Best static method:1220405.0 | with Conv
+Accuracy:33.33%
+SpeedUp:+145.38%
+27/01/2019 12:41:02
+
+
+Done!

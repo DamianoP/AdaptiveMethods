@@ -6,6 +6,7 @@ import re
 import IPython as ip
 import pandas as pd
 import matplotlib
+import time
 from matplotlib.patches import Rectangle
 matplotlib.use('Agg')
 import numpy as np
@@ -15,6 +16,7 @@ import ck.kernel as ck
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from IPython.display import Image, display
+from operator import itemgetter
 np.set_printoptions(threshold='nan')
 from joblib import load
 def myPrint(string):
@@ -27,7 +29,7 @@ print("Then the script will search for a nested folder called 'default' or 'uint
 if(len(sys.argv)>1):
 	folder 		=sys.argv[1]
 else:
-	folder			=raw_input("Name of folder (example alexnetDecisionTree): ") #"alexnetDecisionTree"	
+	folder			=raw_input("Name of folder (example dataset_DecisionTree_CV): ") #"alexnetDecisionTree"	
 if(len(sys.argv)>2):
 	precision		=sys.argv[2]
 else:
@@ -50,8 +52,9 @@ clf = load(folder+"/"+modelName+".joblib")
 myPrint("model loaded !") 
 	
 #########
-os.system("rm -r "+path+"/img")
-os.system("mkdir "+path+"/img")
+if(images==1):
+	os.system("rm -r "+path+"/img")
+	os.system("mkdir "+path+"/img")
 #########
 
 #PREPROCESSING
@@ -144,7 +147,7 @@ nLocalPredicted					=0
 nLocalConv						=0
 nLocalDirectConv				=0
 nLocalWinograd					=0
-
+nCorrectPredicted				=0
 
 shapesNumber 					=0
 localShapeCounter 				=0
@@ -286,7 +289,22 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 	p3 = plt.bar(ind, b3, width,bottom=bottomValue)
 
 	plt.ylabel('Execution Time (microseconds)')
-	plt.title(folder+" "+precisionText+"\n"+imgTitle)
+	
+	if(precisionText=="default"):
+		precisionImage="fp32"
+	else:
+		precisionImage=precisionText
+	
+	folderText=""
+	temp=folder.split("_")
+	for o in range(0,len(temp)):
+		if(o==0):
+			folderText+=temp[o]
+		else:
+			folderText+=","+temp[o]
+
+
+	plt.title(folderText+" "+precisionImage+"\n"+imgTitle)
 	plt.xticks(ind, (convSTR, directSTR, winogSTR, predicSTR, bestSTR))
 
 
@@ -315,7 +333,7 @@ def generateImage(imgName,time1,time2,time3,predictedConv,predictedDirectConv,pr
 
 	extra = Rectangle((0, 0), 1, 1, fc="w", fill=False, edgecolor='none', linewidth=0)
 
-	plt.legend((p1[0], p2[0], p3[0],extra), ('Conv', 'Directconv','Winograd',"Red Text = Alert"),loc='upper center', bbox_to_anchor=(0.96,1.167), fancybox=True, shadow=True,ncol=1)
+	plt.legend((p1[0], p2[0], p3[0],extra), ('Conv', 'Directconv','Winograd',"Red = Failure"),loc='upper center', bbox_to_anchor=(0.96,1.167), fancybox=True, shadow=True,ncol=1)
 	
 
 
@@ -384,6 +402,7 @@ for i in range(1,len(shapes)):
 	nShapes 		   +=1
 	workingShape		=shape[3]+"-"+shape[1]+"-"+shape[2]+"-"+shape[4]+"-"+shape[5]+"-"+shape[6]+"-"+shape[7]
 	workingShapeARFF	=shape[3]+","+shape[1]+","+shape[2]+","+shape[4]+","+shape[5]+","+shape[6]+","+shape[7]+","+str(tuner)+","+str(precision)+","+str(architecture)
+	print workingShapeARFF
 	workingShapeARFF	=eval("[["+workingShapeARFF+"]]")
 	predictedBest		=clf.predict(workingShapeARFF)[0]
 	convTime			="null"
@@ -504,9 +523,30 @@ for i in range(1,len(shapes)):
 	h=x+y+z
 	if (images==1):
 		generateImage(workingShapeARFF,convTime,directconvTime,winogradconvTime,cPred,dPred,wPred,"",classifierName,"null","null","null",h,x,y,z,bestShapeConv,bestShapeDirect,bestShapeWinog,cB,dB,wB) # image for the shape
-
+	if(predictedBest==realBest):
+		nCorrectPredicted+=1
 	# SHAPE + time 1, time 2, time 3, time predicted, predicted method as string 
 middleReport() #last shape
+
+staticMethod=[]
+if(nConv==nShapes):
+	staticMethod.append([globalTimeConv,"Conv"])
+if(nDirectConv==nShapes):
+	staticMethod.append([globalTimeDirectConv,"Directconv"])
+if(nWinograd==nShapes):
+	staticMethod.append([globalTimeWinogradConv,"Winograd"])
+if(len(staticMethod)==0):
+	speedUp="+inf"
+	staticMethod.append(["0","none"])
+else:
+	staticMethod.sort(key=itemgetter(0))
+	speedUp= round(((float(staticMethod[0][0])/float(globalPredictedTime))*float(100))-100,2)
+
+
+
+if(speedUp>=0):
+	speedUp="+"+str(speedUp)
+accuracy=round(float(nCorrectPredicted)/float(nShapes)*float(100),2)
 myPrint("\n")
 myPrint("\n")
 myPrint("-----------------------------------------------------------")
@@ -518,6 +558,10 @@ myPrint("Manual with directconv:"					+str(globalTimeDirectConv)	+ " | " + str(n
 myPrint("Manual with winogradconv:"					+str(globalTimeWinogradConv)+ " | " + str(nWinograd) 	+" experiments successfully achieved on "+str(nShapes) )
 myPrint("With dynamic prediction of the algorithm:"	+str(globalPredictedTime)	+ " | " + str(nPredicted) 	+" experiments successfully achieved on "+str(nShapes) )
 myPrint("Best possible time:"						+str(globalBestTime) )
+myPrint("Best static method:"						+str(staticMethod[0][0]) 	+ " | with "+str(staticMethod[0][1]))
+myPrint("Accuracy:"+str(accuracy)+"%")
+myPrint("SpeedUp:" +str(speedUp)+"%")
+myPrint(time.strftime("%d/%m/%Y %H:%M:%S")) 
 if (images==1):
 		generateImage("global",globalTimeConv,globalTimeDirectConv,globalTimeWinogradConv,globalTimePredictedConv,globalTimePredictedDirectConv,globalTimePredictedWinogradConv,"",classifierName,nConv,nDirectConv,nWinograd,nPredicted,globalPredConv,globalPredDirect,globalPredWinog,			globalBestTimeConv,globalBestTimedirectconv,globalBestTimeWinogradcon,globalCounterBestConv,globalCounterBestDirectconv,globalCounterBestWinogradconv)
 

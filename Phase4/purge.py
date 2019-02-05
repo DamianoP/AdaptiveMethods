@@ -1,6 +1,11 @@
+import sys
+
 fileARFF	="dataset.arff"
-dataCSV		=raw_input("Name of csv file: ")
-purgedARFF	=open("datasetWithout_"+dataCSV+".arff","w")
+if(len(sys.argv)>1):
+	dataCSV 	=sys.argv[1]
+else:
+	dataCSV		=raw_input("Name of csv file: ")
+purgedARFF	=open(dataCSV+".arff","w")
 dataCSV 	=dataCSV+".csv"
 
 purgedARFF.write("@RELATION convolution\n")
@@ -37,4 +42,5 @@ for i in range(1,len(arffLines)):
 			print("Skipped: "+str(j))
 	if(finded==0):
 		purgedARFF.write(arffLines[i]+"\n")
+print("result file: datasetWithout_"+dataCSV+".arff")
 print("Done")

@@ -538,6 +538,25 @@ rank3=""
 speed1=""
 speed2=""
 speed3=""
+
+def insert(listRank,rank):
+    newList=[]
+    done=0
+    for i in range(0,len(listRank)):
+        if(float(listRank[i][1][0])<float(rank[1][0])):
+            newList.append(listRank[i])
+        elif(float(listRank[i][1][0])>=float(rank[1][0]) and done==0):
+            newList.append(rank)
+            newList.append(listRank[i])
+            done=1
+        else:
+            newList.append(listRank[i])
+    if (done==0):
+        newList.append(rank)
+    #print newList
+    return newList
+
+
 for i in range(0,len(workingMemory)): #scan the 3 arrays
     rawData=workingMemory[i]
     for j in range(0,len(rawData)): # scan the array
@@ -567,36 +586,26 @@ for i in range(0,len(workingMemory)): #scan the 3 arrays
                             h=len(rawDataComp)+1
             tempSpeed   = ""
             tempRank    = ""
-            if (speed1 > speed3):
-               tempSpeed=speed3
-               tempRank =rank3
-               rank3=rank1
-               speed3=speed1
-               rank1=tempRank
-               speed1=tempSpeed
-            if (speed1 > speed2):
-                tempSpeed=speed2
-                tempRank =rank2
-                rank2=rank1
-                speed2=speed1
-                rank1=tempRank
-                speed1=tempSpeed
-            if (speed2 > speed3):
-               tempSpeed=speed3
-               tempRank =rank3
-               rank2=rank3
-               speed2=speed3
-               rank3=tempRank
-               speed3=tempSpeed
+            newFileRow=[]
+            newFileRow.append(eval("['"+rawData[j][2]+"']\n"))
+            listRank=[]
+            if(rank1!=""):
+                rank1=eval(rank1)
+                listRank.append(rank1)
 
+            if(rank2!=""):
+                rank2=eval(rank2)
+                listRank = insert(listRank, rank2)
+            
+            if(rank3!=""):
+                rank3=eval(rank3)
+                listRank = insert(listRank, rank3)
+
+            #print listRank
+            newFileRow.append(listRank)
             writeStringToFile(file,best)
-            if rank3=="" or rank3==rank2 :
-                if rank2=="":
-                    file2.write("[['"+rawData[j][2]+"'],[ "+rank1+"]]\n")
-                else:
-                    file2.write("[['"+rawData[j][2]+"'],[ "+rank1+" , "+ rank2+ "]]\n")
-            else:
-                file2.write("[['"+rawData[j][2]+"'],["+rank1+","+ rank2+"," + rank3+ "]]\n")
+            file2.write(str(newFileRow))
+            file2.write("\n")
             rank1=""
             rank2=""
             rank3=""
@@ -606,3 +615,13 @@ for i in range(0,len(workingMemory)): #scan the 3 arrays
 file.close()
 file2.close()
 print("Done !")
+
+
+
+
+
+
+
+
+
+

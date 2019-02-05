@@ -1,6 +1,0 @@
-,W,H,C_IN,KERNEL_SIZE,C_OUT (filters count),STRIDE,PAD,,Layer name
-ResNet,7,7,2048,1,512,1,0,,res5c_branch2a
-ResNet,14,14,1024,1,256,1,0,,res4c_branch2a
-ResNet,56,56,256,1,64,1,0,,res2c_branch2a
-ResNet,56,56,64,1,64,1,0,,res2a_branch2a
-ResNet,224,224,3,7,64,2,3,,conv1

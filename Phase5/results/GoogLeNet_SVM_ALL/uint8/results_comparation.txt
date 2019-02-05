@@ -1,0 +1,61 @@
+loading model...
+model loaded !
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+Analyzing GoogLeNet
+Analyzing: 3-227-227-7-64-2-3
+manual conv time: 59670.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 192-28-28-1-16-1-1
+manual conv time: 5068.0
+manual directconv time: 3928.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 16-28-28-5-32-1-2
+manual conv time: 7509.0
+manual directconv time: 7674.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:72247.0
+manual Directconv time:11602.0
+manual Winogradconv time:0
+best possible time:71107.0
+predicted time for the network:71272.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:72247.0 | 3 experiments successfully achieved on 3
+Manual with directconv:11602.0 | 2 experiments successfully achieved on 3
+Manual with winogradconv:0 | 0 experiments successfully achieved on 3
+With dynamic prediction of the algorithm:71272.0 | 3 experiments successfully achieved on 3
+Best possible time:71107.0
+Best static method:72247.0 | with Conv
+Accuracy:66.67%
+SpeedUp:+1.37%
+27/01/2019 12:42:40
+
+
+Done!

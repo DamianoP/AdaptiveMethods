@@ -1,0 +1,145 @@
+loading model...
+model loaded !
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+Analyzing MobileNet_1.0_160
+Analyzing: 1024-1-1-1-1001-1-0
+manual conv time: 3689.0
+manual directconv time: 12416.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-10-10-1-512-1-0
+manual conv time: 6206.0
+manual directconv time: 23298.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 10344.0
+manual directconv time: 45014.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 10344.0
+manual directconv time: 45014.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 10344.0
+manual directconv time: 45014.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 10344.0
+manual directconv time: 45014.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 512-10-10-1-512-1-0
+manual conv time: 10344.0
+manual directconv time: 45014.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-20-20-1-256-1-0
+manual conv time: 8017.0
+manual directconv time: 18816.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 256-20-20-1-256-1-0
+manual conv time: 12789.0
+manual directconv time: 37753.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 128-40-40-1-128-1-0
+manual conv time: 15181.0
+manual directconv time: 32090.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 64-40-40-1-128-1-0
+manual conv time: 8913.0
+manual directconv time: 16806.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 1024-5-5-1-1024-1-0
+manual conv time: 21045.0
+manual directconv time: 48064.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 512-5-5-1-1024-1-0
+manual conv time: 7821.0
+manual directconv time: 23208.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 32-80-80-1-64-1-0
+manual conv time: 11943.0
+manual directconv time: 18545.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Analyzing: 3-160-160-3-32-2-0
+manual conv time: 4248.0
+manual directconv time: 5363.0
+manual winogradconvTime time: null
+predicted best: directconv
+
+
+Results:
+manual Conv time:151572.0
+manual Directconv time:461429.0
+manual Winogradconv time:0
+best possible time:151572.0
+predicted time for the network:393204.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:151572.0 | 15 experiments successfully achieved on 15
+Manual with directconv:461429.0 | 15 experiments successfully achieved on 15
+Manual with winogradconv:0 | 0 experiments successfully achieved on 15
+With dynamic prediction of the algorithm:393204.0 | 15 experiments successfully achieved on 15
+Best possible time:151572.0
+Best static method:151572.0 | with Conv
+Accuracy:26.67%
+SpeedUp:-61.45%
+27/01/2019 12:41:19
+
+
+Done!

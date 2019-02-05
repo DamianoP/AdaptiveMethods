@@ -3,7 +3,7 @@ import subprocess
 import time
 import multiprocessing
 cpuCores=multiprocessing.cpu_count()
-folders=os.listdir(".")
+models=os.listdir("./models")
 processes = []
 
 def waitAndClean(processes):
@@ -26,17 +26,25 @@ def waitAndClean(processes):
 
 
 
-for i in range(0,len(folders)):	
-	processes=waitAndClean(processes)
-	if(os.path.isdir(folders[i])):
-		p=subprocess.Popen(["python","subProcessEncapsulation.py",folders[i]])
+for i in range(0,len(models)):	
+	if(models[i].find(".joblib")!=-1):
+		model=models[i].split(".joblib")[0]
+		processes=waitAndClean(processes)
+		p=subprocess.Popen(["python","subProcessEncapsulation.py",model])
 		processes.append(p)
 	else:
-		print("Skipping "+folders[i])
+		print("Skipping "+models[i])
 
 
 for p in processes:
 	p.wait()
 
+p=subprocess.Popen(["python","encapsImage.py"])
+processes.append(p)
+p=subprocess.Popen(["python","makeTable.py"])
+processes.append(p)
+
+for p in processes:
+	p.wait()
 
 print("All processed finished")

@@ -48,6 +48,8 @@ def getValue(folder,precision):
 		localValue		=[]
 		nPred			=0
 		nShape			=0
+		staticTime		=0
+		staticMethod	="None"
 		for line in file:
 			line=line.strip()
 			if(line=="Final Report:"):
@@ -61,12 +63,17 @@ def getValue(folder,precision):
 					else:
 						predictionValue=line.split(":")[1].split("|")[0].strip()
 				elif(line.find("Best possible time:")!=-1):
-					oracleValue=line[len("Best possible time:"):].strip()
+					oracleValue		=line[len("Best possible time:"):].strip()
+				elif(line.find("Best static method:")!=-1):
+					staticTime		=line.split(":")[1].split("|")[0].strip()
+					staticMethod	=line.split(":")[1].split("| with")[1].strip()
 		if(predictionValue!="" and oracleValue!=""):
 			localValue.append(folders[i])
 			localValue.append(precision)
 			localValue.append(predictionValue)
 			localValue.append(oracleValue)
+			localValue.append(staticTime)
+			localValue.append(staticMethod)
 			file.close()
 			return localValue
 	except Exception as e:
@@ -76,6 +83,8 @@ def getValue(folder,precision):
 		localValue.append(precision)
 		localValue.append(0)
 		localValue.append(0)
+		localValue.append(0)
+		localValue.append("None")
 		return localValue
 
 if(len(sys.argv)>2):
@@ -104,6 +113,7 @@ else:
 #Making value for the graph
 predictedValue=[]
 oracleValue=[]
+staticValue=[]
 labels=[]
 for i in range(0,len(value)):
 	print(value[i][0])
@@ -112,20 +122,26 @@ for i in range(0,len(value)):
 	print(value[i][3])
 	print("\n\n")
 	try:
-		labels.append(str(value[i][0].split("_")[1])		+" "+str(value[i][1])+"\n"+str(value[i][2])+"\n"+str(value[i][3]))
+		stringLabel=str(value[i][0].split("_")[1])
+		if(value[i][0].split("_")>2):
+			stringLabel+="_"+str(value[i][0].split("_")[2])
+		stringLabel+=" "+str(value[i][1])+"\nPredicted: "+str(value[i][2])+"\nOracle: "+str(value[i][3])+"\n Best static: "+str(value[i][5])
+		labels.append(stringLabel)
 	except:
 		labels.append(str(value[i][0])+" "+str(value[i][1])	+"\n"+str(value[i][2])+"\n"+str(value[i][3]))
 	predictedValue.append(float(value[i][2]))
 	oracleValue.append(float(value[i][3]))
+	staticValue.append(float(value[i][4]))
 
 print predictedValue
 print oracleValue
 
 ind = np.arange(len(predictedValue))
-width = 0.35
+width = 0.23333
 fig, ax = plt.subplots(figsize=(30,10))
-rects1 = ax.bar(ind - width/2, predictedValue, 	width,color='SkyBlue', 		label='Predicted',bottom=0)
-rects2 = ax.bar(ind + width/2, oracleValue, 	width,color='IndianRed', 	label='Oracle',bottom=0)
+rects1 = ax.bar(ind - width,	predictedValue, 	width,color='SkyBlue', 		label='Predicted',			bottom=0)
+rects2 = ax.bar(ind ,			oracleValue, 		width,color='IndianRed', 	label='Oracle',				bottom=0)
+rects3 = ax.bar(ind + width,	staticValue, 		width,color='green', 		label='Best static method',	bottom=0)
 
 ax.set_ylabel('Execution Time (microseconds)')
 ax.set_title(title)

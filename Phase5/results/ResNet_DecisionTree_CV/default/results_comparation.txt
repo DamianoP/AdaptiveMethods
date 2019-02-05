@@ -1,0 +1,75 @@
+loading model...
+model loaded !
+Loading data in memory..
+Ranking File loaded
+Shapes File loaded
+Data loaded correctly
+Preprocessing ended
+Analyzing ResNet
+Analyzing: 2048-7-7-1-512-1-0
+manual conv time: 20050.0
+manual directconv time: 78860.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 1024-14-14-1-256-1-0
+manual conv time: 23021.0
+manual directconv time: 67478.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 256-56-56-1-64-1-0
+manual conv time: 35036.0
+manual directconv time: 93702.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 64-56-56-1-64-1-0
+manual conv time: 10204.0
+manual directconv time: 16872.0
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Analyzing: 3-224-224-7-64-2-3
+manual conv time: 57581.0
+manual directconv time: null
+manual winogradconvTime time: null
+predicted best: conv
+
+
+Results:
+manual Conv time:145892.0
+manual Directconv time:256912.0
+manual Winogradconv time:0
+best possible time:145892.0
+predicted time for the network:145892.0
+-----------------------------------------------------------
+
+ 
+ 
+
+
+
+
+
+-----------------------------------------------------------
+
+
+Final Report:
+If you run all the dataset you will get this time:
+Manual with conv:145892.0 | 5 experiments successfully achieved on 5
+Manual with directconv:256912.0 | 4 experiments successfully achieved on 5
+Manual with winogradconv:0 | 0 experiments successfully achieved on 5
+With dynamic prediction of the algorithm:145892.0 | 5 experiments successfully achieved on 5
+Best possible time:145892.0
+Best static method:145892.0 | with Conv
+Accuracy:100.0%
+SpeedUp:+0.0%
+27/01/2019 12:40:36
+
+
+Done!

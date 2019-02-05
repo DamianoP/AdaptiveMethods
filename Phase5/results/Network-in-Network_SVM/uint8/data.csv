@@ -1,4 +1,0 @@
-,W,H,C_IN,KERNEL_SIZE,C_OUT (filters count),STRIDE,PAD,,Layer name
-Network-in-Network,224,224,3,11,96,4,0,,conv1
-Network-in-Network,27,27,96,5,256,1,2,,conv2
-Network-in-Network,6,6,384,3,1024,1,1,,conv4-1024
